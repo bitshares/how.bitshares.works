@@ -78,10 +78,10 @@
 |  | Voting | You can vote for Witnesses, Committee or Workers. Or you can set a Proxy to case a vote. <br/> **Voting is important** in Bitshares in the same way it is important to the community in which you live. The weight of your vote is directly correlated to the number of BTS you own. If you aren't heavily involved in the community, you are encouraged to choose a proxy who represents your interests.  |
 |  | Asset |  Issued Assets |
 |  | Signed Message |    |
-|  | Membership stats | Basic Member is a default membership. You can upgrade to Lifefime Membership here.   |
+|  | Membership stats | Basic Member is a default membership. You can upgrade to Lifetime Membership here.   |
 |  | Vesting balances | Vesting balances contain any fees earned through the referral program or from worker pay, for example. They have a certain vesting period and are continually unlocked during that vesting period until all of the balances are available  |
 |  | Whitelist | You can set Whitelist and/or Blicklist. Also, you can view 'Whitelisted by' and 'Blacklisted by'.  |
-|  | Permissions | You can review the account's Active Permission, Owner Permission, and Memo Key informarion. <br/> - Active Permission: control over its funds and <br/> - Owner Permission: control over the account. <br/> **Advanced User Only::** If you want to manage your *Cloud Wallet* permissions, you can do so here.  |
+|  | Permissions | You can review/renew each account’s (Active, Owner, and Memo) Public keys and Private keys information. <br/> - Active Permission: It’s consider to be the “online” permission. control accessing funds and some account settings. <br/> - Owner Permission: This permission has administrative power over the account <br/> Also, if you want to change your Cloud Wallet password, use the “Cloud Wallet” tab page.  |
 |  | (Accounts) |    |
 
 ***
