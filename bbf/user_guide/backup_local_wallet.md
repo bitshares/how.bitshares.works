@@ -128,7 +128,7 @@ The brain key is used as source for all cryptographic keys generated in the wall
   <img src="/bbf/images/restore5.png" width="670" title="Restore">
 </p>
 <p align="center">
-  <img src="bbf/images/restore6.png" width="670" title="Restore">
+  <img src="/bbf/images/restore6.png" width="670" title="Restore">
 </p>
 
 ### How to Check Active Local Wallet backup file name
