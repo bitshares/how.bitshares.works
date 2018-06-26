@@ -16,36 +16,33 @@ leverage the full power of the BitShares Blockchain.
 
 ### Quick Start
 
-* [BitShares Whitepaper](http://bitshares.foundation/)
-* Try out the Testnet 
-* [BitShares Blockchain Foundation Announcements ](http://www.bitshares.foundation/)
+- [Create your BitShares UI wallet](/bbf/user_guide/create_account.md#create-an-account)
+- BitShares Whitepaper
+- [BitShares Blockchain Foundation Announcements ](http://www.bitshares.foundation/)
 
 
 ### [User Guide](/bbf/user_guide#user-guide)
-- [Create your BitShares Account and Wallet](/bbf/user_guide/create_account.md#create-your-bitshares-account-and-wallet)
+- [Account and Wallet](/bbf/user_guide/create_account.md#bitshares-account-and-wallet)
 - [BitShares Accounts](/bbf/user_guide/bitshares_client.md#bitshares-accounts)
-  - [BitShares Client](/bbf/user_guide/bitshares_client.md#bitshares-client)  
-  - [Wallet & Login Mode](/bbf/user_guide/bitshares_client.md#wallet--login-mode)
-  - Accounts
-  - [Permissions ](/bbf/user_guide/permissions.md#permissions)
-  - Membership
-  - Fees
-  - Vote / Proxy 
-- [Backups and Restore your Wallet](/bbf/user_guide/backup_local_wallet.md#backups-and-restore-your-wallet)
-  - [Create Local Wallet Backup](/bbf/user_guide/backup_local_wallet.md#create-local-wallet-backup)
-  - [Restore / Import](/bbf/user_guide/backup_local_wallet.md#restore--import)
-- Transactions
+- [BitShares Wallet Features](/bbf/user_guide/wallet_options1.md#bitshares-wallet-features)
+- [Permissions](/bbf/user_guide/permissions.md#permissions)
+- [Backup and Restore your Wallet](/bbf/user_guide/backup_local_wallet.md#backups-and-restore-your-wallet)
 - Deposit & Withdraw
 - Exchange / Explore
-- Wallet Functions & Settings (details)
+- Wallet Functions & Settings 
+
+### [The BitShares Blockchain](/bbf/tech/Readme.md#the-bitshares-blockchain)
+Introduction, Architectures, What’s different in BitShares, etc.
 
 ### BTS Holder Guide
 
 ### [Resources](/bbf/resources#resources)
 
-### Testnet
+***
+***
 
-### [Glossary](/bbf/glossary/Readme.md#glossary)
-
+### [BitShares Developers Documentation portal](https://github.com/bitshares/dev.bitshares.works#bitshares-developers-documentation-portal)
 
 ***
+
+
