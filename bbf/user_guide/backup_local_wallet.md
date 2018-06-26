@@ -104,18 +104,18 @@ The brain key is used as source for all cryptographic keys generated in the wall
 
 
 <p align="center">
-  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/bbf/img/restore1.png" width="670" title="Backup">
+  <img src="/bbf/images/restore1.png" width="670" title="Backup">
 </p>
 
 <p align="center">
-  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/bbf/img/restore3.png" width="670" title="Restore">
+  <img src="/bbf/images/restore3.png" width="670" title="Restore">
 </p>
 
 5. (#3) Type in a password
 6. (#4) Click [**SUBMIT**]
 
 <p align="center">
-  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/bbf/img/restore4.png" width="670" title="Restore">
+  <img src="/bbf/images/restore4.png" width="670" title="Restore">
 </p>
 
 7. (#5) Type in *New Local Wallet Name* if you want to change the backup file name.
@@ -125,10 +125,10 @@ The brain key is used as source for all cryptographic keys generated in the wall
 11. (#8) Click [**DASHBOARD**]
 
 <p align="center">
-  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/bbf/img/restore5.png" width="670" title="Restore">
+  <img src="/bbf/images/restore5.png" width="670" title="Restore">
 </p>
 <p align="center">
-  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/bbf/img/restore6.png" width="670" title="Restore">
+  <img src="bbf/images/restore6.png" width="670" title="Restore">
 </p>
 
 ### How to Check Active Local Wallet backup file name
