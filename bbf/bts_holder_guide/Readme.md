@@ -22,11 +22,9 @@
     - Borrowing, Margin Call, Settlement, Updating Collateral Ratio, Covering, and Discussion
   - [Margin Call Mechanics](/bbf/bts_holder_guide/assets/dex-margin-call-mechanics.md#margin-call-mechanics)
     - Execution Conditions, Discussion, etc
-### [Referral Program](/bbf/bts_holder_guide/referral-program.md#referral-program)
 ### [Vesting Balances](/bbf/bts_holder_guide/vesting-balance.md#vesting-balances)
   - Strategies (CCD / Coin Days Destroyed), Linear Vesting with Cliff, Claiming A Vesting Balance
-### [Voting](/bbf/bts_holder_guide/voting-bh.md#voting)
-  - Vote to… (Witnesses, Committee, Workers, Proxy), Voting by using BitShares UI(Setting a proxy, Voting for Witness, Committee Member or Worker)
+
 
 
 ***

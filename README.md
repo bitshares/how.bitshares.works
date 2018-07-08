@@ -22,10 +22,10 @@ leverage the full power of the BitShares Blockchain.
 
 
 ### [User Guide](/bbf/user_guide#user-guide)
-- [Account and Wallet](/bbf/user_guide/create_account.md#bitshares-account-and-wallet)
-- [BitShares Accounts](/bbf/user_guide/bitshares_client.md#bitshares-accounts)
+- [BitShares Accounts](/bbf/user_guide/accounts#bitshares-accounts)
+- [Create a BitShares Wallet](/bbf/user_guide/create_account.md#create-a-bitshares-wallet)
+- [BitShares Client and Login Mode](/bbf/user_guide/bitshares_client.md#bitshares-client-and-login-mode)
 - [BitShares Wallet Features](/bbf/user_guide/wallet_options1.md#bitshares-wallet-features)
-- [Permissions](/bbf/user_guide/permissions.md#permissions)
 - [Backup and Restore your Wallet](/bbf/user_guide/backup_local_wallet.md#backups-and-restore-your-wallet)
 - [Deposit & Withdraw](/bbf/user_guide#deposit--withdraw)
 - [Exchange / Explore](/bbf/user_guide#exchange--explore)
@@ -35,7 +35,7 @@ leverage the full power of the BitShares Blockchain.
 Introduction, Architectures, What’s different in BitShares, etc.
 
 ### [BTS Holder Guide](/bbf/bts_holder_guide#bts-holder-guide)
-The Beginning of BitShares, tyhe Governance, Assets / Tokens, DEX, Referral Program, Vest Balances, Voting, etc
+The Beginning of BitShares, tyhe Governance, Assets / Tokens, DEX, Vest Balances, etc
 
 ### [Resources](/bbf/resources#resources)
 BitShares Blockchain Foundation, Bitshares Block Exploer, BitShares Community, External Resources, etc
