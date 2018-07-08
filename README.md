@@ -29,13 +29,13 @@ leverage the full power of the BitShares Blockchain.
 - [Backup and Restore your Wallet](/bbf/user_guide/backup_local_wallet.md#backups-and-restore-your-wallet)
 - [Deposit & Withdraw](/bbf/user_guide#deposit--withdraw)
 - [Exchange / Explore](/bbf/user_guide#exchange--explore)
-- Wallet Functions & Settings 
+
 
 ### [BitShares Blockchain](/bbf/tech/Readme.md#the-bitshares-blockchain)
 Introduction, Architectures, What’s different in BitShares, etc.
 
 ### [BTS Holder Guide](/bbf/bts_holder_guide#bts-holder-guide)
-The Beginning of BitShares, tyhe Governance, Assets / Tokens, DEX, Vest Balances, etc
+The Beginning of BitShares, tyhe Governance, Assets / Tokens, DEX, etc
 
 ### [Resources](/bbf/resources#resources)
 BitShares Blockchain Foundation, Bitshares Block Exploer, BitShares Community, External Resources, etc
@@ -46,5 +46,4 @@ BitShares Blockchain Foundation, Bitshares Block Exploer, BitShares Community, E
 ### [BitShares Developers Documentation portal](https://github.com/bitshares/dev.bitshares.works#bitshares-developers-documentation-portal)
 
 ***
-
 
