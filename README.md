@@ -27,8 +27,8 @@ leverage the full power of the BitShares Blockchain.
 - [BitShares Wallet Features](/bbf/user_guide/wallet_options1.md#bitshares-wallet-features)
 - [Permissions](/bbf/user_guide/permissions.md#permissions)
 - [Backup and Restore your Wallet](/bbf/user_guide/backup_local_wallet.md#backups-and-restore-your-wallet)
-- Deposit & Withdraw
-- Exchange / Explore
+- [Deposit & Withdraw](/bbf/user_guide#deposit--withdraw)
+- [Exchange / Explore](/bbf/user_guide#exchange--explore)
 - Wallet Functions & Settings 
 
 ### [BitShares Blockchain](/bbf/tech/Readme.md#the-bitshares-blockchain)

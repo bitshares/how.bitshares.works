@@ -43,9 +43,8 @@
   - Bridge and gateway services
 - Fund Your Account  
   - [Two Options to Fund your Account](/bbf/user_guide/fund_account.md#two-options-to-fund-your-account)
-  - [Send (Transfer)](/bbf/user_guide/fund_account.md#send-transfer)
+    - [Send (Transfer)](/bbf/user_guide/fund_account.md#send-transfer)
   - [Deposit](/bbf/user_guide/fund_account.md#deposit)
-  - [Deposit Forms Items and dDescriptions and Examples](/bbf/user_guide/fund_account.md#deposit-forms-items-and-descriptions)
 ### Exchange / Explore
   - [Exchange](/bbf/user_guide/dex-exchange-ui.md#exchange)
     - Form Features

@@ -2,9 +2,9 @@
  
 ### Table of Contents: 
 * [Two Options to Fund your Account](/bbf/user_guide/fund_account.md#two-options-to-fund-your-account)
-* [Send (Transfer)](/bbf/user_guide/fund_account.md#send-transfer)
+  * [Send (Transfer)](/bbf/user_guide/fund_account.md#send-transfer)
 * [Deposit](/bbf/user_guide/fund_account.md#deposit)
-* [Deposit Forms Items and dDescriptions and Examples](/bbf/user_guide/fund_account.md#deposit-forms-items-and-descriptions)
+  * [Deposit Forms Items and dDescriptions and Examples](/bbf/user_guide/fund_account.md#deposit-forms-items-and-descriptions)
 
  ***
  
@@ -81,7 +81,7 @@ You use `ADDRESS` and `MEMO` to deposit funds. The below images show a Deposit a
 </p>
 
 <p align="center">
-  <img src="/bbf/img/deposit-steem-2.png" width="350" title="confirm">
+  <img src="/bbf/images/deposit-steem-2.png" width="350" title="confirm">
 </p>
 
 #### (Example 2) Deposit EOS by using a Gateway service
@@ -89,11 +89,11 @@ You use `ADDRESS` and `MEMO` to deposit funds. The below images show a Deposit a
 You use `ADDRESS` to deposit funds. The below images show a Deposit and a Deposit(Beta) forms.
 
 <p align="center">
-  <img src="/bbf/img/deposit-eos-legacy.png" width="650" title="confirm">
+  <img src="/bbf/images/deposit-eos-legacy.png" width="650" title="confirm">
 </p>
 
 <p align="center">
-  <img src="/bbf/img/deposit-eos-2.png" width="350" title="confirm">
+  <img src="/bbf/images/deposit-eos-2.png" width="350" title="confirm">
 </p>
 
 #### (Example 3) Deposit BTS
@@ -101,7 +101,7 @@ You use `ADDRESS` to deposit funds. The below images show a Deposit and a Deposi
 You use BitShares Account Name as `ADDRESS` to deposit funds. The below image shows a Deposit(Beta) form.
 
 <p align="center">
-  <img src="/bbf/img/deposit-bts.png" width="350" title="confirm">
+  <img src="/bbf/images/deposit-bts.png" width="350" title="confirm">
 </p>
 
  
