@@ -17,7 +17,7 @@ leverage the full power of the BitShares Blockchain.
 ### Quick Start
 
 - [Create your BitShares UI wallet](/bbf/user_guide/create_account.md#create-an-account)
-- BitShares Whitepaper
+- [BitShares Whitepaper](http://www.bitshares.foundation/papers/BitSharesBlockchain.pdf)
 - [BitShares Blockchain Foundation Announcements ](http://www.bitshares.foundation/)
 
 
@@ -38,6 +38,8 @@ Introduction, Architectures, What’s different in BitShares, etc.
 The Beginning of BitShares, tyhe Governance, Assets / Tokens, DEX, Referral Program, Vest Balances, Voting, etc
 
 ### [Resources](/bbf/resources#resources)
+BitShares Blockchain Foundation, Bitshares Block Exploer, BitShares Community, External Resources, etc
+
 
 ***
 ***
