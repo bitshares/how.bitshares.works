@@ -1,4 +1,4 @@
-## BitShares Accounts
+## BitShares Client and Login Mode
 
 #### Table of Contents:
 - [BitShares Client](/bbf/user_guide/bitshares_client.md#bitshares-client)

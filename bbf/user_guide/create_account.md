@@ -1,4 +1,4 @@
-## BitShares Account and Wallet
+## Create a BitShares Wallet
 
 #### Table or Contents:
 * [Terminology](/bbf/user_guide/create_account.md#terminology)
