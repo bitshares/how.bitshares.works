@@ -22,9 +22,6 @@
     - Borrowing, Margin Call, Settlement, Updating Collateral Ratio, Covering, and Discussion
   - [Margin Call Mechanics](/bbf/bts_holder_guide/assets/dex-margin-call-mechanics.md#margin-call-mechanics)
     - Execution Conditions, Discussion, etc
-### [Vesting Balances](/bbf/bts_holder_guide/vesting-balance.md#vesting-balances)
-  - Strategies (CCD / Coin Days Destroyed), Linear Vesting with Cliff, Claiming A Vesting Balance
-
 
 
 ***
