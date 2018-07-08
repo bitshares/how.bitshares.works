@@ -11,13 +11,13 @@ leverage the full power of the BitShares Blockchain.
 
 
 <p align="center">
-  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/source/bitshares-logo.png" width="150" title="wallet-type">
+  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/source/bitshares-logo.png" width="120" title="wallet-type">
 </p>
 
 ### Quick Start
 
 - [Create your BitShares UI wallet](/bbf/user_guide/create_account.md#create-an-account)
-- BitShares Whitepaper
+- [BitShares Whitepaper](http://www.bitshares.foundation/papers/BitSharesBlockchain.pdf)
 - [BitShares Blockchain Foundation Announcements ](http://www.bitshares.foundation/)
 
 
@@ -31,12 +31,14 @@ leverage the full power of the BitShares Blockchain.
 - Exchange / Explore
 - Wallet Functions & Settings 
 
-### [The BitShares Blockchain](/bbf/tech/Readme.md#the-bitshares-blockchain)
+### [BitShares Blockchain](/bbf/tech/Readme.md#the-bitshares-blockchain)
 Introduction, Architectures, What’s different in BitShares, etc.
 
-### BTS Holder Guide
+### [BTS Holder Guide](/bbf/bts_holder_guide#bts-holder-guide)
+The Beginning of BitShares, tyhe Governance, Assets / Tokens, DEX, Referral Program, Vest Balances, Voting, etc
 
 ### [Resources](/bbf/resources#resources)
+BitShares Blockchain Foundation, Bitshares Block Exploer, BitShares Community, External Resources, etc
 
 ***
 ***
