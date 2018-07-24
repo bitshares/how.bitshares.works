@@ -17,7 +17,7 @@ BitShares has several different kinds of accounts:
 |Basic Accounts | Basic Accounts are free, but do not qualify for the referral program, nor any cash back on transaction fees. |
 |Lifetime Members | LTMs pay an upgrade fee and earn **80% cash back on every fee they pay**. They also qualify for **80% of the fees paid by Basic Accounts they refer** to the network. These 80% can be split among the registrar, that actually registers the accounts, and an affiliate referrer, that brought in the new user. |
 
-> **Note:** In Q1/2016, the *anual membership* has been removed from the code base and no longer exists. References to this kind of           memberships can be safely ignored.
+> **Note:** In Q1/2016, the *annual membership* has been removed from the code base and no longer exists. References to this kind of           memberships can be safely ignored.
 
 The referral fees are controlled by the blockchain and are distributed like this:
 

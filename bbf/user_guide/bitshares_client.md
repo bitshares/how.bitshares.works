@@ -7,7 +7,7 @@
 - [Login Forms](/bbf/user_guide/bitshares_client.md#login-forms)
    - [Cloud Wallet Login](/bbf/user_guide/bitshares_client.md#cloud-wallet-login)
    - [Local Wallet Login](/bbf/user_guide/bitshares_client.md#local-wallet-login)
-   - [Summary](/bbf/user_guide/bitshares_client.md#summary)
+   - [Summary - the difference between a Cloud wallet and a Local Wallet](/bbf/user_guide/bitshares_client.md#summary)
 - [Settings - LOGIN MODE](/bbf/user_guide/bitshares_client.md#settings---login-mode)
 - [Frequently asked Questions](/bbf/user_guide/bitshares_client.md#frequently-asked-questions)
 
@@ -65,9 +65,9 @@ You select your Local wallet backup file name and type your password to login a 
 </p>
 
 
-## Summary
+## Summary 
 
-This section summarize the futures of each wallet.
+The difference between a Cloud wallet and a Local Wallet.
 
 **Cloud Wallet**
 

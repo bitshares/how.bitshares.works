@@ -21,7 +21,7 @@
 - [Login Forms](/bbf/user_guide/bitshares_client.md#login-forms)
    - [Cloud Wallet Login](/bbf/user_guide/bitshares_client.md#cloud-wallet-login)
    - [Local Wallet Login](/bbf/user_guide/bitshares_client.md#local-wallet-login)
-   - [Summary](/bbf/user_guide/bitshares_client.md#summary)
+   - [Summary - The difference between a Cloud wallet and a Local Wallet](/bbf/user_guide/bitshares_client.md#summary)
 - [Settings - LOGIN MODE](/bbf/user_guide/bitshares_client.md#settings---login-mode)
 - [Frequently asked Questions](/bbf/user_guide/bitshares_client.md#frequently-asked-questions)
 ### [BitShares Wallet Features](/bbf/user_guide/wallet_options1.md#bitshares-wallet-features)
