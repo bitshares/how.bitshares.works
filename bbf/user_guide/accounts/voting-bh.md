@@ -1,36 +1,45 @@
 ## Voting
 
 #### Table of Contents:
-- Vote to…
-  - [Witnesses](/bbf/user_guide/accounts/voting-bh.md#witnesses)
-  - [Committee](/bbf/user_guide/accounts/voting-bh.md#committee-members)
-  - [Workers](/bbf/user_guide/accounts/voting-bh.md#workers)
-  - [Proxy](/bbf/user_guide/accounts/voting-bh.md#proxy)
+- Vote for…
+  - [Witnesses](#witnesses)
+  - [Committee](#committee-members)
+  - [Workers](#workers)
+  - [Proxy](#proxy)
 - Voting by using BitShares UI
-  - [Setting a proxy](/bbf/user_guide/accounts/voting-bh.md#setting-a-proxy)
-  - [Voting for Witness, Committee Member or Worker](/bbf/user_guide/accounts/voting-bh.md#voting-for-witness-committee-member-or-worker)
+  - [Setting a proxy](#setting-a-proxy)
+  - [Voting for Witness, Committee Member or Worker](#voting-for-witness-committee-member-or-worker)
 
 ***
 
-Voting is important in Bitshares in the same way it is important to the community in which you live. The weight of your vote is directly correlated to the number of BTS you own. If you aren't heavily involved in the community, you are encouraged to choose a proxy who represents your interests.
+If you hold some BTS tokens, you are considered a BTS holder of the BitShares and thus have a say in where it should be heading in future. 
 
-If you hold some BTS tokens, you are considered a BTS holder of the BitShares business and thus have a say in where it should be heading in future. As a BTS holder you can cast a vote for three different entities within the network:
+Voting is essential in Bitshares in the same way it is essential to the community in which you live. The weight of your vote is directly correlated to the number of BTS you own. If you aren't heavily involved in the community, you are encouraged to choose a proxy who represents your interests. As a BTS holder you can vote for three different entities within the network:
 
-#### Witnesses
 
-Witnesses(Block producers) are entities that work for the blockchain by constructing new blocks. Their role is similar to the role of miners for Bitcoin and other blockchains. Each witness is approved by the BTS holders and constructs and signs blocks from validated transactions. Every transaction made in the network is required to be validated by all witnesses.
+### Witnesses
 
-*Consensus Mechanism:* Who exactly is allowed to produce a block at which time instant is defined by a consensus mechanism called Delegated Proof of Stake. In essence, you, the BTS holders can cast a vote for your preferred block producers on the blockchain. Those witnesses with the most votes are allowed to produce blocks.
+In BitShares, witnesses (Block producers) are entities that work for the blockchain by constructing new blocks. The witnesses collect transactions, bundle them into a block, sign the block and broadcast it to the network.  Every transaction made in the network is required to be validated by all witnesses.
 
-#### Committee Members
+BTS holders elect any number of witnesses to generate blocks. A block is a group of transactions which update the state of the database. Each account is allowed one vote per share per witness, a process known as approval voting. The top witnesses by total approval are selected. 
 
-The committee is a set of entities that are approved by the BTS holders and set policy for the Bitshares blockchain including:
+For each successfully constructed block, a witness is paid for their services. Their pay rate is set by the BTS holders via the (unpaid) committee. If a witness fails to produce a block, then they are not paid, and may even be voted out.
+
+They essentially are the block producers for the underlying consensus mechanism.  The slate of active witnesses is updated once every maintenance interval (1 day) when the votes are tallied. The witnesses are then shuffled, and each witness is given a turn to produce a block at a fixed schedule of one block every 3 seconds. After all witnesses have had a turn, they are shuffled again. If a witness does not produce a block in their time slot, then that time slot is skipped, and the next witness produces the next block. 
+
+### Committee Members
+
+Since Bitcoin struggled to reach a consensus about the size of their blocks, the people in the cryptocurrency space realized that the governance of a DAC should not be ignored. Hence, BitShares offers tools to reach on-chain consensus about business management decisions.
+
+The BitShares blockchain has a set of parameters available that are subject to BTS holders approval. BTS holders can define their preferred set of parameters and thereby create a so-called committee member or alternatively vote for an existing committee member. The BitShares committee consists of several active committee members.
+
+The BitShares ecosystem has a set of parameters available that are approved by the BTS holders and a set policy for the Bitshares blockchain including:
 
 - Transaction and trading fees
 - Blockchain parameters, such as block size, block interval
 - Referral and vesting parameters such as cash back percentage and vesting periods
 
-#### Workers
+### Workers
 
 Workers are proposals to perform a service in return for a salary from the blockchain. A worker proposal contains at a minimum the following information:
 
@@ -48,7 +57,7 @@ Workers are proposals to perform a service in return for a salary from the block
 | Expired   | These worker proposals are displayed for historical purposes. You will find proposals that  have ended based upon their end date.                                     |
 
 
-#### Proxy
+### Proxy
 	
 You may choose to not be active in the governance of Bitshares. If this is the case, it's important that you choose someone in the Bitshares community who you identify with and set that entity as your **proxy**. This gives them to the power to vote on your behalf with your BTS shares backing their vote. This is similar to electing a representative.
 
@@ -61,7 +70,7 @@ You can cast your vote or set your proxy by BitShares User interface.
 Open the side dropdown menu and select **[Voting]**
 
 <p align="center">
-  <img src="/bbf/images/voting1.png" width="200" title="Voting ">
+  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/bbf/images/voting1.png" width="200" title="Voting ">
 </p>
 
 #### Setting a proxy
@@ -74,7 +83,7 @@ The picture below shows how to set your trusted proxy:
 4. Confirm the Transaction
 
 <p align="center">
-  <img src="/bbf/images/voting7.png" width="650" title="CVoting Proxy ">
+  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/bbf/images/voting7.png" width="650" title="CVoting Proxy ">
 </p>
 			
 #### Voting for Witness, Committee Member or Worker
@@ -88,11 +97,11 @@ If you have not set a proxy, you can cast your own vote for witnesses, committee
 5. (vote for each entity)
 
 <p align="center">
-  <img src="/bbf/images/voting2b.png" width="650" title="voting">
+  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/bbf/images/voting2b.png" width="650" title="voting">
 </p>
 			
 <p align="center">
-  <img src="/bbf/images/voting3.png" width="650" title="voting">
+  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/bbf/images/voting3.png" width="650" title="voting">
 </p>
 
 
