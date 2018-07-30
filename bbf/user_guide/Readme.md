@@ -53,9 +53,5 @@
     - Playing Orders
     - Fees
   - [Explore](/bbf/user_guide/dex-explore-ui.md#explore)
-### Wallet Functions & Settings (details)
-  - Settings
-    - Cloud Wallet Login 
-    - Local Wallet Login 
-    
-    
+
+***
