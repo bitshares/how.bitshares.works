@@ -11,7 +11,7 @@ leverage the full power of the BitShares Blockchain.
 
 
 <p align="center">
-  <img src="https://github.com/bitshares/how.bitshares.works/blob/master/source/bitshares-logo.png" width="120" title="wallet-type">
+  <img src="bitshares-logo.png" width="120" title="wallet-type">
 </p>
 
 ### Quick Start
@@ -43,7 +43,7 @@ BitShares Blockchain Foundation, Bitshares Block Exploer, BitShares Community, E
 ***
 ***
 
-### [BitShares Developers Documentation portal](https://github.com/bitshares/dev.bitshares.works#bitshares-developers-documentation-portal)
+### [BitShares Developers Documentation portal](https://bitshares.org/dev.bitshares.works/)
 
 ***
 

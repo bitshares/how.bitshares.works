@@ -1,11 +1,11 @@
 ## Create a BitShares Wallet
 
 #### Table or Contents:
-* [Terminology](/bbf/user_guide/create_account.md#terminology)
-* [Light wallet or Web wallet?](/bbf/user_guide/create_account.md#light-wallet-or-web-wallet)
-* [Create an Account](/bbf/user_guide/create_account.md#create-an-account)
-* [Login](/bbf/user_guide/create_account.md#login)
-* [Advanced: Create an Account](/bbf/user_guide/create_account.md#advanced-create-an-account)
+* [Terminology](../user_guide/create_account.md#terminology)
+* [Light wallet or Web wallet?](../user_guide/create_account.md#light-wallet-or-web-wallet)
+* [Create an Account](../user_guide/create_account.md#create-an-account)
+* [Login](../user_guide/create_account.md#login)
+* [Advanced: Create an Account](../user_guide/create_account.md#advanced-create-an-account)
 
 ***
 
@@ -35,10 +35,7 @@ BitShares has *owner, active and memo keys*. And each key has *public key and pr
 
 Before we create a wallet, let's check what type of wallet you can have as your BitShares wallet. Quick check the below chart. 
 
-<p align="center">
-  <img src="/bbf/images/BitShares-wallet-flow.png" width="640" title="wallet-type">
-</p>
-
+![wallet-type](../images/BitShares-wallet-flow.png)
 
 Did you find out which type of wallet you want to have? 
 
