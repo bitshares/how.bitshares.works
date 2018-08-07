@@ -5,7 +5,7 @@
 * [Light wallet or Web wallet?](../user_guide/create_account.md#light-wallet-or-web-wallet)
 * [Create an Account](../user_guide/create_account.md#create-an-account)
 * [Login](../user_guide/create_account.md#login)
-* [Advanced: Create an Account](..f/user_guide/create_account.md#advanced-create-an-account)
+* [Advanced: Create an Account](../user_guide/create_account.md#advanced-create-an-account)
 
 ***
 
@@ -38,6 +38,8 @@ Before we create a wallet, let's check what type of wallet you can have as your 
 <p align="center">
   <img src="/bbf/images/BitShares-wallet-flow.png" width="640" title="wallet-type">
 </p>
+
+![wallet-type](../images/BitShares-wallet-flow.png)
 
 
 Did you find out which type of wallet you want to have? 
