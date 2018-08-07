@@ -43,7 +43,7 @@ BitShares Blockchain Foundation, Bitshares Block Exploer, BitShares Community, E
 ***
 ***
 
-### [BitShares Developers Documentation portal](https://github.com/bitshares/dev.bitshares.works#bitshares-developers-documentation-portal)
+### [BitShares Developers Documentation portal](https://bitshares.org/dev.bitshares.works/)
 
 ***
 
