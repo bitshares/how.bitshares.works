@@ -1,11 +1,11 @@
 ## Create a BitShares Wallet
 
 #### Table or Contents:
-* [Terminology](/bbf/user_guide/create_account.md#terminology)
-* [Light wallet or Web wallet?](/bbf/user_guide/create_account.md#light-wallet-or-web-wallet)
-* [Create an Account](/bbf/user_guide/create_account.md#create-an-account)
-* [Login](/bbf/user_guide/create_account.md#login)
-* [Advanced: Create an Account](/bbf/user_guide/create_account.md#advanced-create-an-account)
+* [Terminology](../user_guide/create_account.md#terminology)
+* [Light wallet or Web wallet?](../user_guide/create_account.md#light-wallet-or-web-wallet)
+* [Create an Account](../user_guide/create_account.md#create-an-account)
+* [Login](../user_guide/create_account.md#login)
+* [Advanced: Create an Account](..f/user_guide/create_account.md#advanced-create-an-account)
 
 ***
 
