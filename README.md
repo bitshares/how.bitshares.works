@@ -11,7 +11,7 @@ leverage the full power of the BitShares Blockchain.
 
 
 <p align="center">
-  <img src="bbf/bitshares-logo.png" width="120" title="BitSfates">
+  <img src="/bbf/bitshares-logo.png" width="120" title="BitSfates">
 </p>
 
 ### Quick Start
