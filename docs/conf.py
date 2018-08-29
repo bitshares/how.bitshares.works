@@ -57,7 +57,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'BitShares Documentation'
-#copyright = u'Dave Snider, Read the Docs, Inc. & contributors'
+copyright = u'BitShares Blockchain Foundation'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
