@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Create a BitShares Wallet &mdash; BitShares Documentation  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. BitShares Client and Login Mode" href="bitshares-client.html" />
+    <link rel="prev" title="1. BitShares Accounts" href="bts_account.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BitShares Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Technology</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technology/graphene.html">Graphene</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/what_bitshares.html">What is BitShares?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/history_bitshares.html">The History of BitShares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/dpos.html">Delegated Proof of Stake (DPOS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/difference_bitshares.html">What is different BitShares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/bitshares_features.html">Technology - BitShares.org</a></li>
+</ul>
+<p class="caption"><span class="caption-text">BTS Holders</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/things_to_know.html">1. Things you should know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/tokens.html">2. Assets Tokens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/community_members.html">3. Community Members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/dex.html">4. Decentralized Exchange (DEX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/investor_guide.html">5. Investor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/migrating_bitshares20.html">6. Migrating from BitShares 1.0 to BitShares 2.0</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="bts_account.html">1. BitShares Accounts</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Create a BitShares Wallet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#terminology">2.1. Terminology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#light-wallet-or-web-wallet">2.2. Light wallet or Web wallet?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-an-account">2.3. Create an Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#steps">2.3.1. Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#login">2.4. Login</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cloud-wallet-login-form">2.4.1. Cloud Wallet Login form</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-create-an-account">2.5. Advanced: Create an Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.5.1. Steps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bitshares-client.html">3. BitShares Client and Login Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wallet_options.html">4. BitShares Wallet Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backup_local_wallet.html">5. Backups and Restore your Wallet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fund_account.html">6. Fund Your Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bridge_gateway.html">7. Bridge and Gateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dex_exchange_ui.html">8. Exchange and Explore</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_comunities.html">BitShares Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_comunities.html#bitshares-blockchain">BitShares Blockchain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_external.html">Resources External</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BitShares Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>2. Create a BitShares Wallet</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="create-a-bitshares-wallet">
+<h1><a class="toc-backref" href="#id2">2. Create a BitShares Wallet</a><a class="headerlink" href="#create-a-bitshares-wallet" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#create-a-bitshares-wallet" id="id2">Create a BitShares Wallet</a><ul>
+<li><a class="reference internal" href="#terminology" id="id3">Terminology</a></li>
+<li><a class="reference internal" href="#light-wallet-or-web-wallet" id="id4">Light wallet or Web wallet?</a></li>
+<li><a class="reference internal" href="#create-an-account" id="id5">Create an Account</a><ul>
+<li><a class="reference internal" href="#steps" id="id6">Steps</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#login" id="id7">Login</a><ul>
+<li><a class="reference internal" href="#cloud-wallet-login-form" id="id8">Cloud Wallet Login form</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#advanced-create-an-account" id="id9">Advanced: Create an Account</a><ul>
+<li><a class="reference internal" href="#id1" id="id10">Steps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="terminology">
+<h2><a class="toc-backref" href="#id3">2.1. Terminology</a><a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h2>
+<p>In this section, we want to describe Terminologies  and guide you to create and register your BitShares Account.</p>
+<p><strong>Wallet</strong></p>
+<p>Wallets interacts with the blockchain to process accounts and funds functionalities. Users register to create a single wallet. The single wallet can carry many accounts. Users who have a lifetime membership (LTM) can register multiple accounts in parallel; all of them are stored in a single wallet. Also, users can create multiple wallets to organize their accounts properly.</p>
+<p><strong>Accounts</strong></p>
+<p>In BitShares, you can create own <strong>unique account name</strong>, so, you can remember easily. And you will use the account name to communicate (e.g. Send fund) with other BitShares account users (BTS Holders) like an email address. The advantage of using account name is that people can identify you by using a readable and memorable word instead of cryptographic addresses.</p>
+<p>Each user has at least one account that can be used to interact with the blockchain. The account can be seen as a single banking account with an individual balance, transaction history, etc. Since these accounts are registered on the blockchain and are open to the public, we recommend to pick a pseudonym to achieve some privacy.</p>
+<p><strong>Keys</strong></p>
+<p>Keys refer to the cryptography used to secure access to your account and funds. It is of importance to prevent others from gaining access to these keys.</p>
+<p>BitShares has <em>owner, active and memo keys</em>. And each key has <em>public key and private key</em>. It’s important to know that Owner permission has administrative powers over the whole account. Active Permission is considered as an “online” permission that allows to access funds and some account settings.</p>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="light-wallet-or-web-wallet">
+<h2><a class="toc-backref" href="#id4">2.2. Light wallet or Web wallet?</a><a class="headerlink" href="#light-wallet-or-web-wallet" title="Permalink to this headline">¶</a></h2>
+<p>Before we create a wallet, let’s check what type of wallet you can have as your BitShares wallet. Quick check the below chart.</p>
+<a class="reference internal image-reference" href="../_images/BitShares-wallet-flow.png"><img alt="wallet" class="align-center" src="../_images/BitShares-wallet-flow.png" style="width: 550px;" /></a>
+<p>Did you find out which type of wallet you want to have?</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>If you want to install <strong>Light Wallet (BitShares UI)</strong>, download <a class="reference external" href="https://github.com/bitshares/bitshares-ui/releases">BitShares UI Releases</a> file and install it to your machine.</dt>
+<dd><ul class="first last">
+<li><em>This does not mean you will have a Local wallet.</em></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>If you want to use <strong>Web Wallet</strong>, go to this link (<a class="reference external" href="https://wallet.bitshares.org">https://wallet.bitshares.org</a>).</li>
+</ul>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="create-an-account">
+<h2><a class="toc-backref" href="#id5">2.3. Create an Account</a><a class="headerlink" href="#create-an-account" title="Permalink to this headline">¶</a></h2>
+<p>In this section, you will create a <strong>Cloud wallet</strong>.</p>
+<p>We use the term Cloud Wallet, but technically nothing is stored in the cloud. We call the Cloud Wallet because <strong>you can use your credentials (username and password) from any web browser</strong> at any time to gain access to your account.</p>
+<p><strong>Welcome BitShares - Create Account &amp; Login form</strong></p>
+<a class="reference internal image-reference" href="../_images/welcome-bitshares1.png"><img alt="bitshares" class="align-center" src="../_images/welcome-bitshares1.png" style="width: 300px;" /></a>
+<div class="section" id="steps">
+<h3><a class="toc-backref" href="#id6">2.3.1. Steps</a><a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>1.Click [<strong>CREATE ACCOUNT</strong>]</li>
+<li>2.Type in [<strong>ACCOUNT NAME</strong>]. You can create your unique BitShares account name.</li>
+<li>3.Set a password. Copy and use a <strong>GENERATED PASSWORD</strong></li>
+<li>4.Type or paste your password to confirm.</li>
+<li>5.Check the check boxes. <strong>Make sure you read before you check!</strong></li>
+<li>6.Click [<strong>CREATE ACCOUNT</strong>]</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/create-account1.png"><img alt="bitshares" class="align-center" src="../_images/create-account1.png" style="width: 350px;" /></a>
+<p>Before you submit, check your password one more time if you saved the correct one.</p>
+<p><strong>ONLY you can open your wallet again. No one can help.</strong> Do not lose it!</p>
+<ul class="simple">
+<li>7.Click <strong>[SHOW ME MY PASSWORD</strong>] and double check if you have a correct password.</li>
+<li>8.Click [<strong>OK,TAKE ME TO THE DASHBOARD</strong>]</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/create-account4.png"><img alt="bitshares" class="align-center" src="../_images/create-account4.png" style="width: 350px;" /></a>
+<ul class="simple">
+<li>Click the top menu [<strong>Dashbord</strong>] if it did not open.</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/dashboard.png"><img alt="bitshares" class="align-center" src="../_images/dashboard.png" style="width: 600px;" /></a>
+<p>Now, you have a BitShares <strong>Cloud Wallet</strong>. Before you fund to your account, let’s login to make sure if you have a correct password.</p>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="login">
+<h2><a class="toc-backref" href="#id7">2.4. Login</a><a class="headerlink" href="#login" title="Permalink to this headline">¶</a></h2>
+<p>Click a <strong>Locked Key</strong> icon in the top right corner to open a login form.</p>
+<a class="reference internal image-reference" href="../_images/topmenu-lock.png"><img alt="bitshares" class="align-center" src="../_images/topmenu-lock.png" style="width: 550px;" /></a>
+<div class="section" id="cloud-wallet-login-form">
+<h3><a class="toc-backref" href="#id8">2.4.1. Cloud Wallet Login form</a><a class="headerlink" href="#cloud-wallet-login-form" title="Permalink to this headline">¶</a></h3>
+<p>If you followed the above steps to create a BitShares account, you have a Cloud Wallet as a default wallet.</p>
+<p>On the Login form, you can see which wallet Login form for. (i.e., Login with: Account name (cloud wallet))</p>
+<a class="reference internal image-reference" href="../_images/login-cloud-wallet.png"><img alt="bitshares" class="align-center" src="../_images/login-cloud-wallet.png" style="width: 400px;" /></a>
+<p>If you logged in successfully, you would find a <strong>Unlocked Key</strong>.</p>
+<a class="reference internal image-reference" href="../_images/topmenu-unlock2.png"><img alt="bitshares" class="align-center" src="../_images/topmenu-unlock2.png" style="width: 600px;" /></a>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="advanced-create-an-account">
+<h2><a class="toc-backref" href="#id9">2.5. Advanced: Create an Account</a><a class="headerlink" href="#advanced-create-an-account" title="Permalink to this headline">¶</a></h2>
+<p>In this section, you will create a <strong>Local Wallet</strong>.</p>
+<p>If you have a Cloud Wallet, you can access your wallet from any browsers. However, the Local Wallet, you can only access your funds from <strong>the same computer and web browser</strong> that you have used to register and create your account.</p>
+<p>The Local wallet requires you to create <strong>a backup file</strong> to manage your account and funds. The backup file can be used to move</p>
+<a class="reference internal image-reference" href="../_images/local-login1.png"><img alt="bitshares" class="align-center" src="../_images/local-login1.png" style="width: 300px;" /></a>
+<div class="section" id="id1">
+<h3><a class="toc-backref" href="#id10">2.5.1. Steps</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>1.Click [<strong>advanced form</strong>]</li>
+<li>2.Type in [<strong>ACCOUNT NAME</strong>]. You can create your unique BitShares account name.</li>
+<li>3.Set a password. Create own strong password.</li>
+<li>4.Type or paste your password to confirm.</li>
+<li>5.Click [<strong>CREATE ACCOUNT</strong>]</li>
+</ul>
+<p>&gt; <strong>If this is yore first account, a faucet will pay the registration fee for you!</strong></p>
+<a class="reference internal image-reference" href="../_images/local-login2a.png"><img alt="bitshares" class="align-center" src="../_images/local-login2a.png" style="width: 300px;" /></a>
+<p>&gt; <strong>Your Web Browser is your Wallet:</strong>  Please read the information below.</p>
+<a class="reference internal image-reference" href="../_images/local-login2b.png"><img alt="bitshares" class="align-center" src="../_images/local-login2b.png" style="width: 300px;" /></a>
+<ul class="simple">
+<li>Click [<strong>CREATE BACKUP NOW</strong>]</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/local-login3.png"><img alt="bitshares" class="align-center" src="../_images/local-login3.png" style="width: 300px;" /></a>
+<p><strong>It’s extremely important you to create a backup of your account and keep a safe place</strong>.</p>
+<ul class="simple">
+<li>Click [<strong>DOWNLOAD</strong>] to save a backup (.bin) file.</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/local-login4.png"><img alt="bitshares" class="align-center" src="../_images/local-login4.png" style="width: 300px;" /></a>
+<p><strong>Congratulation, you’re ready!</strong></p>
+<a class="reference internal image-reference" href="../_images/local-login5.png"><img alt="bitshares" class="align-center" src="../_images/local-login5.png" style="width: 300px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bitshares-client.html" class="btn btn-neutral float-right" title="3. BitShares Client and Login Mode" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bts_account.html" class="btn btn-neutral" title="1. BitShares Accounts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

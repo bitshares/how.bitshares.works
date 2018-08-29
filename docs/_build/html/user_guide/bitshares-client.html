@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. BitShares Client and Login Mode &mdash; BitShares Documentation  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. BitShares Wallet Features" href="wallet_options.html" />
+    <link rel="prev" title="2. Create a BitShares Wallet" href="create_account.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BitShares Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Technology</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technology/graphene.html">Graphene</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/what_bitshares.html">What is BitShares?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/history_bitshares.html">The History of BitShares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/dpos.html">Delegated Proof of Stake (DPOS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/difference_bitshares.html">What is different BitShares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/bitshares_features.html">Technology - BitShares.org</a></li>
+</ul>
+<p class="caption"><span class="caption-text">BTS Holders</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/things_to_know.html">1. Things you should know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/tokens.html">2. Assets Tokens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/community_members.html">3. Community Members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/dex.html">4. Decentralized Exchange (DEX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/investor_guide.html">5. Investor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/migrating_bitshares20.html">6. Migrating from BitShares 1.0 to BitShares 2.0</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="bts_account.html">1. BitShares Accounts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_account.html">2. Create a BitShares Wallet</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. BitShares Client and Login Mode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bitshares-client">3.1. BitShares Client</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#light-client">3.1.1. Light Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#web-client">3.1.2. Web Client</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#login-forms">3.2. Login Forms</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cloud-wallet-login">3.2.1. Cloud Wallet Login</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#local-wallet-login">3.2.2. Local Wallet Login</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#summary">3.3. Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cloud-wallet">3.3.1. Cloud Wallet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#local-wallet">3.3.2. Local Wallet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#settings-login-mode">3.3.3. Settings - LOGIN MODE</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#frequently-asked-questions">3.4. Frequently asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wallet_options.html">4. BitShares Wallet Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backup_local_wallet.html">5. Backups and Restore your Wallet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fund_account.html">6. Fund Your Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bridge_gateway.html">7. Bridge and Gateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dex_exchange_ui.html">8. Exchange and Explore</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_comunities.html">BitShares Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_comunities.html#bitshares-blockchain">BitShares Blockchain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_external.html">Resources External</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BitShares Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>3. BitShares Client and Login Mode</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bitshares-client-and-login-mode">
+<h1><a class="toc-backref" href="#id1">3. BitShares Client and Login Mode</a><a class="headerlink" href="#bitshares-client-and-login-mode" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#bitshares-client-and-login-mode" id="id1">BitShares Client and Login Mode</a><ul>
+<li><a class="reference internal" href="#bitshares-client" id="id2">BitShares Client</a><ul>
+<li><a class="reference internal" href="#light-client" id="id3">Light Client</a></li>
+<li><a class="reference internal" href="#web-client" id="id4">Web Client</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#login-forms" id="id5">Login Forms</a><ul>
+<li><a class="reference internal" href="#cloud-wallet-login" id="id6">Cloud Wallet Login</a></li>
+<li><a class="reference internal" href="#local-wallet-login" id="id7">Local Wallet Login</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#summary" id="id8">Summary</a><ul>
+<li><a class="reference internal" href="#cloud-wallet" id="id9">Cloud Wallet</a></li>
+<li><a class="reference internal" href="#local-wallet" id="id10">Local Wallet</a></li>
+<li><a class="reference internal" href="#settings-login-mode" id="id11">Settings - LOGIN MODE</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#frequently-asked-questions" id="id12">Frequently asked Questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="bitshares-client">
+<h2><a class="toc-backref" href="#id2">3.1. BitShares Client</a><a class="headerlink" href="#bitshares-client" title="Permalink to this headline">¶</a></h2>
+<p>You have sole control of your accounts and funds and they are created on your computer (within the light-client or the browser web-client).</p>
+<ul class="simple">
+<li>If you created a <strong>Clout wallet</strong>, you will be able to access to your wallet by using your credentials (username and password) from any browser or computers. You do not need to worry about a backup files. (<em>You do not have the functionality.</em>)</li>
+<li>If you created a <strong>Local wallet</strong>, you will be able to access your account <strong>only</strong> on the computer that you have used to register and create your account. If you have created a backup file, you can import it and restore your wallet somewhere else.</li>
+</ul>
+<div class="section" id="light-client">
+<h3><a class="toc-backref" href="#id3">3.1.1. Light Client</a><a class="headerlink" href="#light-client" title="Permalink to this headline">¶</a></h3>
+<p>Download client files and install BitShares Wallet to your computer.</p>
+<p><strong>&gt; Note: This download does not mean that you will have a Local wallet.</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="http://bitshares.org/download/">Download the Official Light Client</a></li>
+<li><a class="reference external" href="https://github.com/bitshares/bitshares-ui/releases">BitShares-UI – Latest Release</a></li>
+</ul>
+<p><strong>BitShares-UI</strong>:
+This is a web application and runs in a browser. A connection is established to a trusted node in the network that serves as a gateway to the rest of the ecosystem.</p>
+</div>
+<div class="section" id="web-client">
+<h3><a class="toc-backref" href="#id4">3.1.2. Web Client</a><a class="headerlink" href="#web-client" title="Permalink to this headline">¶</a></h3>
+<p>Access the network and open the wallet in the browsers via one of our partners.</p>
+<ul class="simple">
+<li>wallet.bitshares.org <a class="reference external" href="https://wallet.bitshares.org">https://wallet.bitshares.org</a></li>
+<li>(more…)</li>
+</ul>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="login-forms">
+<h2><a class="toc-backref" href="#id5">3.2. Login Forms</a><a class="headerlink" href="#login-forms" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cloud-wallet-login">
+<h3><a class="toc-backref" href="#id6">3.2.1. Cloud Wallet Login</a><a class="headerlink" href="#cloud-wallet-login" title="Permalink to this headline">¶</a></h3>
+<p>The cloud wallet only allows for a single account to be accessed at a time. This wallet is generally the correct choice for a new user.</p>
+<p><strong>Login Form</strong></p>
+<p>You login with your account name and your password. The login form shows which type of wallet you login to. (i.e., Login with: <strong>Account name (cloud wallet)</strong>)</p>
+<a class="reference internal image-reference" href="../_images/login-cloud-wallet.png"><img alt="bitshares" class="align-center" src="../_images/login-cloud-wallet.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="local-wallet-login">
+<h3><a class="toc-backref" href="#id7">3.2.2. Local Wallet Login</a><a class="headerlink" href="#local-wallet-login" title="Permalink to this headline">¶</a></h3>
+<p>A Big difference between a Cloud wallet and a Local wallet is the local wallet creates a database within your browser. This means that access to your funds is tied to the browser only. If you attempt to access your local wallet from any other computer, or any other browser, it will fail unless you actively import your backup file from the original browser backup file.</p>
+<p><strong>Login Form</strong></p>
+<p>You select your Local wallet backup file name and type your password to login a Local wallet. The <strong>Key file(.bin)</strong> should be your wallet backup file name. The backup file contains all your keys information.</p>
+<a class="reference internal image-reference" href="../_images/login-local2.png"><img alt="bitshares" class="align-center" src="../_images/login-local2.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="summary">
+<h2><a class="toc-backref" href="#id8">3.3. Summary</a><a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>The difference between a Cloud wallet and a Local Wallet.</p>
+<div class="section" id="cloud-wallet">
+<h3><a class="toc-backref" href="#id9">3.3.1. Cloud Wallet</a><a class="headerlink" href="#cloud-wallet" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>BitShare UI wallet will create a <strong>Cloud wallet</strong> as a default wallet. (i.e., [CREATE ACCOUNT])</li>
+<li>The Cloud wallet allows you to login from any web browser at any time to gain access to your account by using your credentials (username and password).</li>
+<li>The Cloud wallet only allows for a single account to be accessed at a time.</li>
+<li>If you have a Cloud wallet, you don’t need to worry about a backup. (<em>You don’t have the functionality in the Cloud wallet</em>).</li>
+<li><strong>You can switch the INTERFACE by using the [Settings] - [General] - [Login Mode], however your account won’t switch, only the *interface* switches.</strong></li>
+<li><strong>Even you import Private keys (was in the Cloud wallet) to the Local wallet, you do not have a brain key to associate with the Private keys you imported. Therefor, a brainkey restore won’t find those Private keys. (In this case, no meaning to do a brainkey backup and restore.)</strong></li>
+<li><strong>The Cloud wallet has no brainkey.</strong> The password is basically the equivalent of the brainkey, but it’s only used for that one account.</li>
+</ul>
+</div>
+<div class="section" id="local-wallet">
+<h3><a class="toc-backref" href="#id10">3.3.2. Local Wallet</a><a class="headerlink" href="#local-wallet" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>If you know you want to have a Local wallet, use an [advanced form] link on the Welcome to BitShares form and create a backup file. This is the only way to create a Local wallet.</strong></li>
+<li>The Local wallet creates a correct pair of keys (a brainkey and private keys) and save the information to your browser.</li>
+<li>The Local wallet creates a database with in your browser. This means that you can only access your funds from the same computer and web browser that you have used to register and create your account.  If you attempt to access your local wallet from any other computer, or any other browser, it will fail unless you actively import your backup file from the original browser backup file.</li>
+<li>You have to create a backup files to manage the Cloud wallet account.</li>
+<li>The Cloud wallet has Backup options. Go to [Settings] - [Backup] to find.
+- <strong>Create local wallet backup</strong> : create a Binary File (.bin) backup.
+- <strong>Create brainkey backup</strong> : give you long random phrases. You need to write down and keep it in a safe place.</li>
+<li>The backup files can be used to move your local wallet to different computers or different browsers. In order to restore your local wallet you will need the backup file and your password! Therefor, it’s extremely important you create a backup and keep a safe place.</li>
+</ul>
+</div>
+<div class="section" id="settings-login-mode">
+<h3><a class="toc-backref" href="#id11">3.3.3. Settings - LOGIN MODE</a><a class="headerlink" href="#settings-login-mode" title="Permalink to this headline">¶</a></h3>
+<p><strong>Users often misunderstand about this feature.</strong></p>
+<p>This setting feature allows you to select the LOGIN MODE. You can just switch the <em>interface</em>. You are <strong>not</strong> switching your account from one to another.</p>
+<p>Go to [Settings] - [General] - <strong>LOGIN MODE</strong> to find the feature.</p>
+<p>&gt; <strong>This feature only switch the *interface*! Not your account self.</strong></p>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="frequently-asked-questions">
+<h2><a class="toc-backref" href="#id12">3.4. Frequently asked Questions</a><a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><strong>Can I switch (by changing the Wallet Mode or importing private keys) my Cloud wallet to a Local wallet?</strong></p>
+<ul class="simple">
+<li>No. Your account won’t switch, only the <em>interface</em> switches.</li>
+</ul>
+</li>
+<li><p class="first"><strong>I have a Cloud wallet. Can I have a Local wallet?</strong></p>
+<ul class="simple">
+<li>Yes. But you will have to create new account for the Local wallet.</li>
+</ul>
+</li>
+<li><p class="first"><strong>How can I move my funds from a Cloud wallet to a Local wallet?</strong></p>
+<ul class="simple">
+<li>We mentioned before. You have to create new account for the Local wallet. You can create the Local wallet by using an [<strong>advanced form</strong>] link on Welcome to BitShares form. After you created new Local wallet, send your funds from your old account (Cloud wallet) to new account (Local wallet). And create a backup!!</li>
+</ul>
+</li>
+<li><p class="first"><strong>I have a Cloud wallet. Do I have to save my private keys information somewhere?</strong></p>
+<ul class="simple">
+<li>Not necessary. Because the Could wallet always do it for extra security. Also lets you login without exposing your owner key, you can login using only the active key.</li>
+</ul>
+</li>
+<li><p class="first"><strong>Can I change a Cloud wallet password?</strong></p>
+<ul class="simple">
+<li>Yes.</li>
+<li>Go to <a class="reference external" href="https://github.com/bitshares/bitshares-ui/wiki/Cloud-Wallet-Login-and-changing-password">How to change a password if using a Cloud Wallet</a> : from BitShares UI wiki</li>
+</ul>
+</li>
+<li><p class="first"><strong>Can I change a Local wallet password?</strong></p>
+<ul class="simple">
+<li>Yes.</li>
+<li>Go to [<strong>Settings</strong>] - [<strong>Password</strong>] - Change your password. Use this page</li>
+</ul>
+<p>.</p>
+</li>
+<li><p class="first"><strong>There is [Create Account] in a Side navigation menu. Can I create and add new account in the same wallet I logged in?</strong></p>
+<ul class="simple">
+<li>Yes. However, the account you logged in must have a LifeTime Membership (LTM) stats.</li>
+</ul>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="wallet_options.html" class="btn btn-neutral float-right" title="4. BitShares Wallet Features" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="create_account.html" class="btn btn-neutral" title="2. Create a BitShares Wallet" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

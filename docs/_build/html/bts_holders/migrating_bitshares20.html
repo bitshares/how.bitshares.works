@@ -1,0 +1,364 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6. Migrating from BitShares 1.0 to BitShares 2.0 &mdash; BitShares Documentation  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="1. BitShares Accounts" href="../user_guide/bts_account.html" />
+    <link rel="prev" title="5. Investor Guide" href="investor_guide.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BitShares Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Technology</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technology/graphene.html">Graphene</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/what_bitshares.html">What is BitShares?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/history_bitshares.html">The History of BitShares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/dpos.html">Delegated Proof of Stake (DPOS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/difference_bitshares.html">What is different BitShares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/bitshares_features.html">Technology - BitShares.org</a></li>
+</ul>
+<p class="caption"><span class="caption-text">BTS Holders</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="things_to_know.html">1. Things you should know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tokens.html">2. Assets Tokens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community_members.html">3. Community Members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dex.html">4. Decentralized Exchange (DEX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="investor_guide.html">5. Investor Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Migrating from BitShares 1.0 to BitShares 2.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-new-in-bitshares-2-0">6.1. What is new in BitShares 2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-has-changed-since-bitshares-0-9">6.2. What has changed since BitShares 0.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#blockchain-upgrade">6.3. Blockchain Upgrade</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/bts_account.html">1. BitShares Accounts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/create_account.html">2. Create a BitShares Wallet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/bitshares-client.html">3. BitShares Client and Login Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/wallet_options.html">4. BitShares Wallet Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/backup_local_wallet.html">5. Backups and Restore your Wallet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/fund_account.html">6. Fund Your Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/bridge_gateway.html">7. Bridge and Gateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/dex_exchange_ui.html">8. Exchange and Explore</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_comunities.html">BitShares Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_comunities.html#bitshares-blockchain">BitShares Blockchain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_external.html">Resources External</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BitShares Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>6. Migrating from BitShares 1.0 to BitShares 2.0</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="migrating-from-bitshares-1-0-to-bitshares-2-0">
+<h1>6. Migrating from BitShares 1.0 to BitShares 2.0<a class="headerlink" href="#migrating-from-bitshares-1-0-to-bitshares-2-0" title="Permalink to this headline">¶</a></h1>
+<p>This migration tutorial is relevant only to those customers and investors that have participated in BitShares 1.0. We show improvements, new features and give assistance for claiming your funds in BitShares 2.0.</p>
+<div class="contents local topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#what-is-new-in-bitshares-2-0" id="id1">What is new in BitShares 2.0</a></li>
+<li><a class="reference internal" href="#what-has-changed-since-bitshares-0-9" id="id2">What has changed since BitShares 0.9</a></li>
+<li><a class="reference internal" href="#blockchain-upgrade" id="id3">Blockchain Upgrade</a></li>
+</ul>
+</div>
+<div class="section" id="what-is-new-in-bitshares-2-0">
+<h2><a class="toc-backref" href="#id1">6.1. What is new in BitShares 2.0</a><a class="headerlink" href="#what-is-new-in-bitshares-2-0" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Votable Network Parameters</strong>:
+BitShares 2.0 will allow its BTS Holders to fine-tune any parameter available to the protocol. This includes, block size, block interval, but also the payment for block producers and transaction fees.</li>
+<li><strong>Flexible and Dynamic Access Control</strong>:
+BitShares 2.0 allows customers and participants a flexible and dynamic access to its funds or account handle. A so called <em>Authority</em> can consist of a flat hierarchy similar to <em>multi-signature</em> in Bitcoin, but could also support tree hierarchies never to be seen before. Read more about this about <a class="reference external" href="https://bitshares.org/technology/dynamic-account-permissions/">dynamic account permissions</a>.</li>
+<li><strong>Transferable Account Names</strong>:
+Since Control over Funds is separated from the control over an account, we can have transferable account names that are registered on the blockchain. Named accounts allows for much easier transfers because no cryptic strings needs to be handed out. Read more about <a class="reference external" href="https://bitshares.org/technology/transferable-named-accounts/">transferable named accounts</a>.</li>
+<li><strong>On-Chain Proposed Transactions</strong>:
+In traditional crypto currencies, a multi-signature transaction has to be transfered to its corresponding signers on separated communication channels (off-chain). BitShares 2.0 allows to propose transactions on the chain and have the signers be notified for their required signature automatically. No more manual communications are required.</li>
+<li><strong>New Full-Node/Client Concept</strong>:
+We recognize the hassles some people had when synchronizing the BitShares 1.0 blockchain with the heavy-weighted BitShares full client. In order to offer more comfort and a faster trading experience, we decided to separated the user-interface from the block syncing core component that connects to the peer-to-peer network. Of course, both are open source and a full node can run
+easily, we understand that some users mainly prefer to use the frontend not bothering about the blockchain.</li>
+<li><strong>Referral Program</strong>:
+PayPal and Dwolla showed the success of referral programs, a program that could easily and cheaper be implemented in a decentralized software protocol. Hence we took our chance and implemented a blockchain based referral program. From every transaction fee, paid by a customer you referred, you will get a fraction. Of course, this fraction can be tuned by BTS Holders! Read more about the <a class="reference external" href="https://bitshares.org/referral-program/">referral program</a>.</li>
+<li><strong>Recurring &amp; Scheduled Payments</strong>:
+We wanted to offer a way to have our rent payed automatically. So we implemented it in the blockchain. In BitShares 2.0, participants are capable of allowing others to withdraw funds from your account. Of course, you can define a daily/weekly or monthly limit. Read more about <a class="reference external" href="https://bitshares.org/technology/recurring-and-scheduled-payments/">recurring and scheduled payments</a>.</li>
+<li><strong>Additional Privatized BitAssets</strong>:
+In contrast to Market Pegged Assets (also known as BitAssets) that have a price feed published by witnesses that have approval of BTS Holders, a <em>privatized</em> bitasset allows to create market pegged assets that have an individual set of price feed publishers that do not need BTS Holders’ approval. Hence, everyone can create a privatized bitAsset to track an individual value, such as indices, or binary predictions.</li>
+</ul>
+</div>
+<div class="section" id="what-has-changed-since-bitshares-0-9">
+<h2><a class="toc-backref" href="#id2">6.2. What has changed since BitShares 0.9</a><a class="headerlink" href="#what-has-changed-since-bitshares-0-9" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>BitAssets are Contracts-For-Difference</strong>:
+Our research has identified an improved mechanism to achieve a solid <em>peg</em> of bitAssets to its underlay. BitAssets like the bitUSD in BitShares 2.0 will always trade for <em>at least</em> the value of its underlying asset, i.e. $1. We have summarized the economical analysis and incentives for market participants here: <a class="reference external" href="https://bitshares.org/technology/price-stable-cryptocurrencies/">bitAssets 2.0</a></li>
+<li><strong>Faster Blocks</strong>:
+Initially, the BitShares 2.0 blockchain will come with 3 seconds block interval with the option to reduce down to 1 second if BTS Holders agree.</li>
+<li><strong>Industrial Performance</strong>:
+BitShares 2.0 can support massive load and works well beyond 100k transactions per second. Find out how we achieve <a class="reference external" href="https://bitshares.org/technology/industrial-performance-and-scalability/">industrial performance and scalability</a>.</li>
+<li><strong>New Reactive UI</strong>:
+The BitShares 1.0 user interface was powerful but lacking in responsiveness and performance. For Bitshares 2.0 we’ve reimplemented the whole wallet using the React.js framework developed by Facebook, which is well-known for having excellent performance. The new BitShares UI is an entirely browser-based wallet, with private keys maintained in the browser. We expect a flourishing ecosystem of forked and tweaked wallets based off of our UI.</li>
+<li><strong>Accounts must be registered</strong>:
+In BitShares 2.0 we have separated <em>authorities</em> from transaction partners. Hence, if Alice wants to send funds to Bob, it may be required that only Celine signs for that transaction. Also, BitShares 2.0 has <a class="reference external" href="https://bitshares.org/technology/recurring-and-scheduled-payments/">a referral program</a>. Both features combined make it necessary that participants <em>register</em> an account on the blockchain.</li>
+<li><strong>No more Hierarchies in Account Names</strong>:
+In BitShares 1, there have been hierarchies in account names. Namely, you could only create a sub-account <code class="docutils literal notranslate"><span class="pre">home.wallet</span></code> if you also owned <code class="docutils literal notranslate"><span class="pre">wallet</span></code>. In BitShares 2.0, these hierarchies no longer exist and to register <code class="docutils literal notranslate"><span class="pre">home.wallet</span></code> you don’t need to own <code class="docutils literal notranslate"><span class="pre">wallet</span></code>.</li>
+<li><strong>Explicit Privacy</strong>:
+The <em>TITAN</em> technology in BitShares 2.0 slowed down blockchain processing significantly. Because of this and because TITAN did not really offer good privacy, we eliminated TITAN as a default transaction feature.  Hence: <strong>Account transactions are public now as well.</strong> However, since we recognize the value of financial privacy, we offer <em>blinded</em> transactions that hide the transferred <em>amount</em>, and <em>stealth</em> transactions that hide the sender and receiver. A combination of both is also possible.</li>
+<li><strong>Prices are Fractions</strong>:
+To circumvent rounding errors, all prices in BitShares 2.0 are represented as fractions.</li>
+<li><strong>Delegates are now Witnesses and Payed Positions are now Budget Items</strong>:
+Since we have separated the business part from the block producing part, we now call block producers (formerly known as <em>delegates</em>) witnesses, while the additional payed position for workers are called budget items.</li>
+</ul>
+</div>
+<div class="section" id="blockchain-upgrade">
+<h2><a class="toc-backref" href="#id3">6.3. Blockchain Upgrade</a><a class="headerlink" href="#blockchain-upgrade" title="Permalink to this headline">¶</a></h2>
+<p>BitShares 2.0 will be initialized with what is called a <em>Genesis Block</em>. That genesis block will be constructed from the balances of BitShares 1.0. BitShares 1.0 offers many features that need to be migrated into BitShares 2.0. To simplify the process and reduce the risk of errors, the following conditions will be met:</p>
+<ul>
+<li><p class="first"><strong>Funds</strong>:</p>
+<ul class="simple">
+<li><strong>BTS Tokens</strong>: All BTS balances will be migrated 1:1. The supply not change!</li>
+<li><strong>User-Issued-Assets</strong>: All UAI tokens will be migrated 1:1</li>
+<li><strong>BitAssets</strong>: Because the new chain is a simple migration and should retain all the same “perceived value”, all BitAssets and short positions are migrated 1:1.</li>
+</ul>
+</li>
+<li><p class="first"><strong>Account Names</strong>:
+Under BitShares 2.0, accounts are transferable and have different prices based upon the “quality” of the account name. Any “premium” names registered on or after 2015-06-08 (US Eastern time) will be given the prefix “bts-“ or similar after the migration. All account names registered on or after 2015-06-18 (US Eastern time) will be prefixed with “bts-” unless they were
+registered using the BitShares Faucet.</p>
+<ul class="simple">
+<li><strong>Premium Name</strong>:  No numbers and has vowels</li>
+<li><strong>Cheap Name</strong>:    Has numbers or no vowels</li>
+</ul>
+<p>All other account names will be migrated with their corresponding owner/active keys.</p>
+</li>
+<li><p class="first"><strong>Open Orders</strong>:
+Open orders (except open short positions) will <strong>not</strong> migrate and the funds will be credited to the corresponding owners.</p>
+</li>
+<li><p class="first"><strong>Open Shorts</strong>:
+Short orders will be migrated to BitShares 2.0 on a 1:1 ratio. You collateral will be imported as a separated account (e.g. <code class="docutils literal notranslate"><span class="pre">usd-collateral-holder-124</span></code>) under your control.</p>
+</li>
+<li><p class="first"><strong>Transaction History</strong>:
+Transaction histories of BitShares 1.0 will be inaccessible in BitShares 2.0.</p>
+</li>
+<li><p class="first"><strong>Vesting Balances</strong>:
+Vesting balances will migrate under the existing terms, if two or more vesting balances were partially claimed as part of the same transaction prior to the snapshot the vesting balances may be merged into a single balance.</p>
+</li>
+<li><p class="first"><strong>Unclaimed Delegate Pay</strong>:
+Delegates that did not claim their pay prior to the snapshot will be able to claim their pay by importing their corresponding keys similar to any other balance.</p>
+</li>
+<li><p class="first"><strong>Assets</strong>:
+User issued assets and market pegged assets will migrated with their corresponding issuer and holders.</p>
+</li>
+<li><p class="first"><strong>Deprecated Features</strong>:
+Some features have turned out to be unreliable or impractical and will thus deprecate:</p>
+<ul class="simple">
+<li><strong>Wall Messages</strong> will not be migrated as the feature is now deprecated</li>
+<li>Asset <strong>description information</strong> is no longer part of the blockchain state and will not be migrated</li>
+<li>Account <strong>public data</strong> is deprecated and is no longer part of the blockchain state</li>
+<li>BitShares URL scheme: <cite>bts://</cite> will be deprecated due to migration to hosted web wallets</li>
+</ul>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../user_guide/bts_account.html" class="btn btn-neutral float-right" title="1. BitShares Accounts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="investor_guide.html" class="btn btn-neutral" title="5. Investor Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

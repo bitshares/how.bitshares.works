@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Assets Tokens &mdash; BitShares Documentation  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2.1. User Issued Assets (UIAs)" href="tokens/uia.html" />
+    <link rel="prev" title="1. Things you should know" href="things_to_know.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BitShares Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Technology</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technology/graphene.html">Graphene</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/what_bitshares.html">What is BitShares?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/history_bitshares.html">The History of BitShares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/dpos.html">Delegated Proof of Stake (DPOS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/difference_bitshares.html">What is different BitShares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/bitshares_features.html">Technology - BitShares.org</a></li>
+</ul>
+<p class="caption"><span class="caption-text">BTS Holders</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="things_to_know.html">1. Things you should know</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Assets Tokens</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tokens/uia.html">2.1. User Issued Assets (UIAs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/mpa.html">2.2. Market Pegged Assets (MPAs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/eba.html">2.3. Exchange Backed Assets (EBA)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/privbta.html">2.4. Privatized BitAssets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/fba.html">2.5. Fee Backed Asset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/pm.html">2.6. Prediction Markets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="community_members.html">3. Community Members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dex.html">4. Decentralized Exchange (DEX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="investor_guide.html">5. Investor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_bitshares20.html">6. Migrating from BitShares 1.0 to BitShares 2.0</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/bts_account.html">1. BitShares Accounts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/create_account.html">2. Create a BitShares Wallet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/bitshares-client.html">3. BitShares Client and Login Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/wallet_options.html">4. BitShares Wallet Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/backup_local_wallet.html">5. Backups and Restore your Wallet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/fund_account.html">6. Fund Your Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/bridge_gateway.html">7. Bridge and Gateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/dex_exchange_ui.html">8. Exchange and Explore</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_comunities.html">BitShares Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_comunities.html#bitshares-blockchain">BitShares Blockchain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/info_external.html">Resources External</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BitShares Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>2. Assets Tokens</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="assets-tokens">
+<h1>2. Assets Tokens<a class="headerlink" href="#assets-tokens" title="Permalink to this headline">¶</a></h1>
+<p><strong>User Issued Assets (UIAs)</strong></p>
+<p>Freely traded tokens created by individuals used for a variety of use-cases, such as stock, miles, event tickets or reputation points.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tokens/uia.html">2.1. User Issued Assets (UIAs)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tokens/uia.html#use-cases">2.1.1. Use Cases</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<p><strong>Market-Pegged Assets (MPA)</strong></p>
+<p>These SmartCoins track the value of an underlaying asset, such as Gold, or U.S. Dollar. Smartcoins can be created by anyone contracting with the BitShares ecosystem and putting sufficient BTS (at least 175%) into the so called contract for difference as collateral.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tokens/mpa.html">2.2. Market Pegged Assets (MPAs)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tokens/mpa.html#smartcoins">2.2.1. SmartCoins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/mpa.html#collateralized-tokens">2.2.2. Collateralized Tokens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/mpa.html#market-mechanics">2.2.3. Market Mechanics</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<p><strong>Exchange Backed Assets (EBA)</strong></p>
+<p>This kind of asset is commonly known as I owe you (IOU). It represents the right to withdraw the same amount (minus fees) of a backing asset from a central entity. Often they are issued by a bank, an exchange or an other financial institute to represent deposit receipts.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tokens/eba.html">2.3. Exchange Backed Assets (EBA)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tokens/eba.html#use-case">2.3.1. Use Case</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<p><strong>Privatized Bit-Assets</strong></p>
+<p>A flexible mixture between UIA and MPA that allows 3rd parties to create their own customized MPAs.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tokens/privbta.html">2.4. Privatized BitAssets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tokens/privbta.html#preparations">2.4.1. Preparations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tokens/privbta.html#parameters">2.4.1.1. Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/privbta.html#changing-the-feed-producers">2.4.2. Changing the Feed producers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/privbta.html#producing-a-feed">2.4.3. Producing a Feed</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<p><strong>Fee Backed Assets</strong></p>
+<p>An FBA is a token that pays you a fraction of the transaction fees generated by a particular feature that has been funded independent of BitShares.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tokens/fba.html">2.5. Fee Backed Asset</a></li>
+</ul>
+</div>
+<hr class="docutils" />
+<p><strong>Prediction Market Asset</strong></p>
+<p>A prediction market is similar to a MPA, that trades between 0 and 1, only. After an event, a price feed can be used to determine which option to take and participants can settle at this price.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tokens/pm.html">2.6. Prediction Markets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tokens/pm.html#creation">2.6.1. Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/pm.html#betting">2.6.2. Betting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tokens/pm.html#betting-for-a-positive-outcome">2.6.2.1. Betting for a Positive Outcome</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tokens/pm.html#betting-for-a-negative-outcome">2.6.2.2. Betting for a Negative Outcome</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tokens/pm.html#resolving">2.6.3. Resolving</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tokens/uia.html" class="btn btn-neutral float-right" title="2.1. User Issued Assets (UIAs)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="things_to_know.html" class="btn btn-neutral" title="1. Things you should know" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
