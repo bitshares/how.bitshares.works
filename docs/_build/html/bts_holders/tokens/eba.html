@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2.3. Exchange Backed Assets (EBA) &mdash; BitShares Documentation  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.4. Privatized BitAssets" href="privbta.html" />
+    <link rel="prev" title="2.2. Market Pegged Assets (MPAs)" href="mpa.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> BitShares Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Technology</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../technology/graphene.html">Graphene</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../technology/what_bitshares.html">What is BitShares?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../technology/history_bitshares.html">The History of BitShares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../technology/dpos.html">Delegated Proof of Stake (DPOS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../technology/difference_bitshares.html">What is different BitShares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../technology/bitshares_features.html">Technology - BitShares.org</a></li>
+</ul>
+<p class="caption"><span class="caption-text">BTS Holders</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../things_to_know.html">1. Things you should know</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tokens.html">2. Assets Tokens</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uia.html">2.1. User Issued Assets (UIAs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mpa.html">2.2. Market Pegged Assets (MPAs)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.3. Exchange Backed Assets (EBA)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#use-case">2.3.1. Use Case</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="privbta.html">2.4. Privatized BitAssets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fba.html">2.5. Fee Backed Asset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pm.html">2.6. Prediction Markets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community_members.html">3. Community Members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dex.html">4. Decentralized Exchange (DEX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../investor_guide.html">5. Investor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../migrating_bitshares20.html">6. Migrating from BitShares 1.0 to BitShares 2.0</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/bts_account.html">1. BitShares Accounts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/create_account.html">2. Create a BitShares Wallet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/bitshares-client.html">3. BitShares Client and Login Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/wallet_options.html">4. BitShares Wallet Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/backup_local_wallet.html">5. Backups and Restore your Wallet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/fund_account.html">6. Fund Your Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/bridge_gateway.html">7. Bridge and Gateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/dex_exchange_ui.html">8. Exchange and Explore</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/info_comunities.html">BitShares Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/info_comunities.html#bitshares-blockchain">BitShares Blockchain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/info_external.html">Resources External</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">BitShares Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../tokens.html">2. Assets Tokens</a> &raquo;</li>
+        
+      <li>2.3. Exchange Backed Assets (EBA)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="exchange-backed-assets-eba">
+<span id="eba"></span><h1>2.3. Exchange Backed Assets (EBA)<a class="headerlink" href="#exchange-backed-assets-eba" title="Permalink to this headline">¶</a></h1>
+<p>Exchange Backed Assets represent deposit receipts that are issued by a centralized entity, such as exchanges, banks or other institutes. These can either be interpreted as <em>I owe you</em> (IOUs) or certificates for a deposit at that institute.</p>
+<p>From the blockchain perspective, EBA are equivalent to a <a class="reference internal" href="uia.html#uia"><span class="std std-ref">User Issued Assets (UIAs)</span></a> that is created and issued by an exchange, bank or financial institute. Hence, it is their responsibility to credit you with the corresponding blockchain token (the EBA) on deposits.</p>
+<div class="section" id="use-case">
+<h2>2.3.1. Use Case<a class="headerlink" href="#use-case" title="Permalink to this headline">¶</a></h2>
+<p>The most common use case would be a centralized exchange that allows their users to deposit crypto currencies in their wallets. These
+deposits are usually stored in their own database and the customers internal account balance is matched accordingly. These database balances serve as <strong>deposit receipts</strong> but obviously require some trust that the database is properly secured against any kind of attacks.</p>
+<p>Instead of increasing an internal account balance of a user, new shares of an EBA can be issued to the user on deposits. Since EBAs are
+blockchain tokens, they can be traded on the decentralized exchange similar to any other exchange.</p>
+<p>In order to reclaim his crypto tokens on their native blockchain, the users sends back the EBAs to the institute who then destroy the EBAs and transfer the corresponding asset back to its rightful owner.</p>
+<hr class="docutils" />
+<p>Since EBAs are implemented as UIA, you can read more about the underlying technology on the <a class="reference internal" href="uia.html#uia"><span class="std std-ref">corresponding page - UIA</span></a>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="privbta.html" class="btn btn-neutral float-right" title="2.4. Privatized BitAssets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mpa.html" class="btn btn-neutral" title="2.2. Market Pegged Assets (MPAs)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
