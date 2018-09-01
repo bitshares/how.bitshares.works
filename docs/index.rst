@@ -20,6 +20,7 @@
 
     bts_holders/things_to_know	
     bts_holders/tokens
+    bts_holders/bts_governance
     bts_holders/community_members
     bts_holders/dex
     bts_holders/investor_guide
@@ -35,7 +36,6 @@
     user_guide/bts_account
     user_guide/create_account
     user_guide/bitshares-client
-    user_guide/wallet_options
     user_guide/backup_local_wallet
     user_guide/fund_account
     user_guide/bridge_gateway 

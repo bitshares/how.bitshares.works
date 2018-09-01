@@ -1,7 +1,10 @@
 
+.. _bitshares-communities:
+
 ********************
 BitShares Community
 ********************      
+	 
 	  
 Communities
 ======================
