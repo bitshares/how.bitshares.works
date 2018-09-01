@@ -89,21 +89,21 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../bts_holders/things_to_know.html">1. Things you should know</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../bts_holders/tokens.html">2. Assets Tokens</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../bts_holders/community_members.html">3. Community Members</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../bts_holders/dex.html">4. Decentralized Exchange (DEX)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../bts_holders/investor_guide.html">5. Investor Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../bts_holders/migrating_bitshares20.html">6. Migrating from BitShares 1.0 to BitShares 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/bts_governance.html">3. Blockchain Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/community_members.html">4. Community Memberships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/dex.html">5. Decentralized Exchange (DEX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/investor_guide.html">6. Investor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bts_holders/migrating_bitshares20.html">7. Migrating from BitShares 1.0 to BitShares 2.0</a></li>
 </ul>
 <p class="caption"><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="bts_account.html">1. BitShares Accounts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="create_account.html">2. Create a BitShares Wallet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bitshares-client.html">3. BitShares Client and Login Mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wallet_options.html">4. BitShares Wallet Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="backup_local_wallet.html">5. Backups and Restore your Wallet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fund_account.html">6. Fund Your Account</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bridge_gateway.html">7. Bridge and Gateway</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dex_exchange_ui.html">8. Exchange and Explore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backup_local_wallet.html">4. Backups and Restore your Wallet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fund_account.html">5. Fund (Send) &amp; Transactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bridge_gateway.html">6. Bridge and Gateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dex_exchange_ui.html">7. Exchange and Explore</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Resources</span></p>
 <ul>
@@ -174,6 +174,8 @@
             
   <div class="section" id="permissions">
 <h1>Permissions<a class="headerlink" href="#permissions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="permission-models">
+<h2>Permission Models<a class="headerlink" href="#permission-models" title="Permalink to this headline">¶</a></h2>
 <p>In BitShares, each account is separated into</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -205,15 +207,21 @@ the “online” permissions.</td>
 <li><strong>Hierarchical Corporate Accounts</strong></li>
 </ul>
 <p>BitShares designs permissions around people, rather than around cryptography, making it easy to use. Every account can be controlled by any weighted combination of other accounts and private keys. This creates a hierarchical structure that reflects how permissions are organized in real life, and makes multi-user control over funds easier than ever. Multi-user control is the single biggest contributor to security, and, when used properly, it can virtually eliminate the risk of theft due to hacking.</p>
-<p>Read more about <a class="reference external" href="https://github.com/bitshares/dev.bitshares.works/blob/master/core/knowledge_base/multi-signature.md#multi-signature">Multi-Signature</a> (<em>The link opens the BitShares developers documentation</em>)</p>
+<p>Read more about <a class="reference internal" href="bts_account.html#multi-signature"><span class="std std-ref">Multi-Signature</span></a></p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+</div>
 <div class="section" id="permissions-in-wallet-settings">
 <h2>Permissions - in Wallet Settings<a class="headerlink" href="#permissions-in-wallet-settings" title="Permalink to this headline">¶</a></h2>
+<p>The Permission page locates in a side menu.</p>
+<ul class="simple">
+<li>Go to [<strong>Settings</strong>] and click [<strong>Permissions</strong>]</li>
+</ul>
 <a class="reference internal image-reference" href="../_images/permissions-active2.png"><img alt="Permissions Keys" class="align-center" src="../_images/permissions-active2.png" style="width: 700px;" /></a>
+</div>
 <div class="section" id="permissions-tabs">
-<h3>Permissions Tabs<a class="headerlink" href="#permissions-tabs" title="Permalink to this headline">¶</a></h3>
+<h2>Permissions Tabs<a class="headerlink" href="#permissions-tabs" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
 <col width="2%" />
@@ -251,14 +259,16 @@ By using a public/private key pair without spending authority, you may give read
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="public-key-and-private-key">
 <h1>Public Key and Private Key<a class="headerlink" href="#public-key-and-private-key" title="Permalink to this headline">¶</a></h1>
-<p>In this section, we will show you how to find your private key.  <strong>Please check no one around you to keep secret your private keys!</strong></p>
+<div class="section" id="where-are-public-private-keys">
+<h2>Where are public/private keys?<a class="headerlink" href="#where-are-public-private-keys" title="Permalink to this headline">¶</a></h2>
+<p>In this section, we will show you how to find your private key.</p>
 <p>You can find each <strong>Public key</strong> and <strong>Private key</strong> on the Permissions page.</p>
 <a class="reference internal image-reference" href="../_images/permissions-active3.png"><img alt="Permissions Keys" class="align-center" src="../_images/permissions-active3.png" style="width: 700px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="how-to-find-each-private-key">
 <h2>How to find each private key<a class="headerlink" href="#how-to-find-each-private-key" title="Permalink to this headline">¶</a></h2>
@@ -266,41 +276,50 @@ By using a public/private key pair without spending authority, you may give read
 <p class="first admonition-title">Note</p>
 <p class="last">If you cannot click nor find a link, <em>login</em> to your wallet.</p>
 </div>
-<div class="section" id="active-and-owner-private-keys">
-<h3>Active and Owner – Private keys<a class="headerlink" href="#active-and-owner-private-keys" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
+<ol class="arabic simple">
+<li><strong>Active and Owner – Private keys</strong></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
 <li>Go to [<strong>Settings</strong>] - [<strong>Permissions</strong>]</li>
 <li>Click a private key number or a key image.</li>
 <li>A Private key viewer form opens. You will find a Public Key and a [<strong>SHOW</strong>] button like below.</li>
 <li>Click the [<strong>SHOW</strong>] button. You will find your Private key under the Public key.</li>
 </ul>
+</div></blockquote>
 <a class="reference internal image-reference" href="../_images/permissions-active4b.png"><img alt="Permissions Keys" class="align-center" src="../_images/permissions-active4b.png" style="width: 500px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-</div>
-<div class="section" id="memo-private-keys">
-<h3>Memo – Private keys<a class="headerlink" href="#memo-private-keys" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
+<ol class="arabic simple" start="2">
+<li><strong>Memo – Private keys</strong></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
 <li>Go to [<strong>Settings</strong>] - [<strong>Permissions</strong>] - [<strong>Memo key</strong>] tab</li>
 <li>Click a key image. (It seems a private key number does not have a link.)</li>
 <li>A Private key viewer form opens. You will find a Public Key and a [<strong>SHOW</strong>] button like below.</li>
 <li>Click the [<strong>SHOW</strong>] button. You will find your Private key under the Public key.</li>
 </ul>
+</div></blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
-</div>
 </div>
 </div>
 <div class="section" id="how-to-change-cloud-wallet-password">
 <h2>How to change Cloud wallet password<a class="headerlink" href="#how-to-change-cloud-wallet-password" title="Permalink to this headline">¶</a></h2>
 <p>In this section, we will show you how to change your Cloud Wallet password.</p>
-<p>Click <strong>Cloud Wallet Tab</strong></p>
-<p>If you want to change your <em>Cloud Wallet</em> password, use this page. You will change your password and your keys during the process.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Go to [<strong>Settings</strong>] - [<strong>Permissions</strong>] - [<strong>Cloud Wallet key</strong>] tab</li>
+</ul>
+</div></blockquote>
+<p>If you want to change your <strong>Cloud Wallet</strong> password, use this page. You will change your password and your keys during this process.</p>
 <a class="reference internal image-reference" href="../_images/permissions-cloud2.png"><img alt="cloud wallet pwd" class="align-center" src="../_images/permissions-cloud2.png" style="width: 650px;" /></a>
-<p><strong>Steps</strong></p>
-<p><strong>1. Save your old Memo key (optional)</strong></p>
-<p>When you replace the memo key you will not be able to see old memos, so if you have a lot of those we recommend saving the old memo private key.</p>
+<div class="section" id="steps">
+<h3>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><strong>Save your old Memo key (optional)</strong></li>
+</ol>
+<blockquote>
+<div><p>When you replace the memo key you will not be able to see old memos, so if you have a lot of those we recommend saving the old memo private key.</p>
 <ul class="simple">
 <li>Go to [<strong>Settings</strong>] - [<strong>Permissions</strong>] - [<strong>Memo key</strong>] tab</li>
 <li>Click a key image.</li>
@@ -308,23 +327,35 @@ By using a public/private key pair without spending authority, you may give read
 <li>Click the [<strong>SHOW</strong>] button. Log in to your wallet if necessary. You will find your Private key under the Public key.</li>
 <li>Write down and save the Private key.</li>
 </ul>
-<p><strong>2. Set new password</strong></p>
-<p>You can use your desired new password or use the auto-GENERATED PASSWORD.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><strong>Set new password</strong></li>
+</ol>
+<blockquote>
+<div><p>You can use your desired new password or use the auto-GENERATED PASSWORD.</p>
 <ul class="simple">
 <li>(#1)Type in [<strong>PASSWORD</strong>]</li>
 <li>(#2)Conform the password [<strong>CONFIRM PASSWORD</strong>]</li>
 </ul>
-<p><strong>3. Generate new keys</strong></p>
-<p>In this example, we decided to keep old Memo keys.</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><strong>Generate new keys</strong></li>
+</ol>
+<blockquote>
+<div><p>In this example, we decided to keep old Memo keys.</p>
 <ul class="simple">
 <li>(#3)Click [<strong>USE</strong>] to generate new Active key</li>
 <li>(#4)Click [<strong>USE</strong>] to generate new Owner key</li>
 <li>(#5)Click [<strong>SAVE</strong>]</li>
 <li>Confirm the Transaction</li>
 </ul>
+</div></blockquote>
 <a class="reference internal image-reference" href="../_images/permissions-cloud3.png"><img alt="cloud wallet pwd" class="align-center" src="../_images/permissions-cloud3.png" style="width: 650px;" /></a>
-<p><strong>4. Remove old keys</strong></p>
-<p>In order to remove access using your old password, you need to remove the keys corresponding to the old password.</p>
+<ol class="arabic simple" start="4">
+<li><strong>Remove old keys</strong></li>
+</ol>
+<blockquote>
+<div><p>In order to remove access using your old password, you need to remove the keys corresponding to the old password.</p>
 <ul class="simple">
 <li>Log out, and log back in with <strong>your new password</strong>.</li>
 <li>Go to [<strong>Settings</strong>] - [<strong>Permissions</strong>] - [<strong>Active key</strong>] tab</li>
@@ -336,13 +367,10 @@ By using a public/private key pair without spending authority, you may give read
 <li>(#7)Click [<strong>SAVE</strong>] – <em>Do not forget to save!</em></li>
 <li>Confirm the Transaction</li>
 </ul>
+</div></blockquote>
 <a class="reference internal image-reference" href="../_images/permissions-removekey1.png"><img alt="cloud wallet pwd" class="align-center" src="../_images/permissions-removekey1.png" style="width: 650px;" /></a>
 <a class="reference internal image-reference" href="../_images/permissions-removekey2.png"><img alt="cloud wallet pwd" class="align-center" src="../_images/permissions-removekey2.png" style="width: 650px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<div class="line-block">
-<div class="line"><br /></div>
+<hr class="docutils" />
 </div>
 </div>
 </div>

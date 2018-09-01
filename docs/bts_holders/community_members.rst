@@ -1,7 +1,7 @@
 
-********************
-Community Members 
-********************
+**********************
+Community Memberships
+**********************
 
 
 .. contents:: Table of Contents
