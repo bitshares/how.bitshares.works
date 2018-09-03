@@ -22,7 +22,7 @@ Voting by using BitShares UI
  Open the side dropdown menu and select **[Voting]**
 
 
-.. image:: ../images/voting1.png
+.. image:: voting1.png
         :alt: cloud wallet pwd
         :width: 200px
         :align: center		
@@ -39,7 +39,7 @@ Setting a proxy
  3. Login to a wallet if you have not logged in
  4. Confirm the Transaction
 
-.. image:: ../images/voting7.png
+.. image:: voting7.png
         :alt: cloud wallet pwd
         :width: 650px
         :align: center		
@@ -55,6 +55,9 @@ Voting for Witness, Committee Member or Worker
  3. Click [SAVE] 
  4. Login to a wallet if you have not logged in
  5. (vote for each entity)
+
+
+-------------------
 
 
 |

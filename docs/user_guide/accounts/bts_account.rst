@@ -112,8 +112,6 @@ Fees types
 
 .. include:: bts_permissions.rst 
 
-.. _multi-signature:
-
 .. include:: bts_multi-sign.rst 
 		
 .. include:: voting.rst  
