@@ -12,7 +12,7 @@ Some entrepreneurs may want to experiment with SmartCoins that always trade at e
 
 Preparations
 ---------------------
-(ref: *dev.bitshares.works* material)
+(add a link to *dev.bitshares.works* )
 
 
 Parameters

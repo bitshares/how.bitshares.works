@@ -1,4 +1,6 @@
 
+.. _bts-multi-sign:
+
 Multi-Signature
 ======================
 

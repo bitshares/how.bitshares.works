@@ -17,6 +17,7 @@ import os
 
 sys.path.append(os.path.abspath('..'))
 #sys.path.append(os.path.abspath('./demo/'))
+sys.path.append(os.path.abspath('./docs/'))
 
 from sphinx_rtd_theme import __version__
 
@@ -56,8 +57,10 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'BitShares Documentation'
-copyright = u'BitShares Blockchain Foundation'
+#project = u'Read the Docs Sphinx Theme'
+#copyright = u'Dave Snider, Read the Docs, Inc. & contributors'
+project = u'BitShares Documentation Portal'
+copyright = u'2018, BitShares Blockchain Foundation'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -115,7 +118,21 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'logo_only': True
+    #'canonical_url': '',
+    #'analytics_id': '',
+    'logo_only': True,
+    #'display_version': True,
+    #'prev_next_buttons_location': 'bottom',
+    #'style_external_links': False,
+    #'vcs_pageview_mode': '',
+    # Toc options
+    # 'collapse_navigation': True,
+    # 'sticky_navigation': True,
+    # 'navigation_depth': 4,
+    # 'includehidden': True,
+    #'titles_only': False
+	
+	
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -124,9 +141,10 @@ html_theme_path = ["../.."]
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 #html_title = None
+#html_title = "BitShares Blockchain Foundation"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-#html_short_title = None
+html_short_title = "BitShares Documentation Portal" 
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -160,9 +178,11 @@ html_theme_path = ["../.."]
 
 # If false, no module index is generated.
 #html_domain_indices = True
+html_domain_indices = True
 
 # If false, no index is generated.
 #html_use_index = True
+html_use_index = True
 
 # If true, the index is split into individual pages for each letter.
 #html_split_index = False
@@ -174,8 +194,10 @@ html_show_sourcelink = False
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 #html_show_sphinx = True
 
+
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
-#html_show_copyright = True
+html_show_copyright = True
+
 
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
@@ -187,7 +209,6 @@ html_show_sourcelink = False
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'SphinxRTDthemedemodoc'
-
 
 # -- Options for LaTeX output --------------------------------------------------
 
@@ -258,7 +279,7 @@ texinfo_documents = [
 #texinfo_appendices = []
 
 # If false, no module index is generated.
-#texinfo_domain_indices = True
+texinfo_domain_indices = True
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
