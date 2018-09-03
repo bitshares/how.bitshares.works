@@ -21,9 +21,6 @@ Creation
 
 Prediction markets are assets that trade freely and can be borrowed from the market at a 1:1 ratio with the backing asset (which could be any other asset, including BTS, USD, GOLD).
 
-(ref: *dev.bitshares.works* material)
-
-
 
 Betting
 -------------

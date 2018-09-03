@@ -71,8 +71,10 @@ Claiming Referral Bonus and Cashback
  * already paid some fees, or
  * have referred people that paid some fees,
 
- you can withdraw them in the "Vesting" tab of your account.
+you can withdraw them in the "Vesting" tab of your account.
 
+
+------------------
 
 |
 
