@@ -18,6 +18,9 @@ From steemit
 Articles 
 ===============
 
+
+* `Market Pegged Asset (MPA) backing collateral layers <https://bitsharestalk.io/btstalk-dev/@customminer/market-pegged-asset-mpa-backing-collateral-layers>`_ : by @customminer  
+
 * `BITSHARES HELP DESK & SUPPORT RESOURCES - How to get answers fast! OpenLedger included! <https://steemit.com/bitshares/@intelliguy/bitshares-help-desk-and-support-resources-how-to-get-answers-fast-openledger-included>`_ : by intelliguy
 
 * `BitShares Enterprise Alliance - Part 1 - Alice's Hero Hub <https://steemit.com/bitshares/@stan/bitshares-enterprise-alliance-part-1-alice-s-hero-hub>`_ : by @stan
