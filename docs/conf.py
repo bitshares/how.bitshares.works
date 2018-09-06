@@ -59,7 +59,7 @@ master_doc = 'index'
 # General information about the project.
 #project = u'Read the Docs Sphinx Theme'
 #copyright = u'Dave Snider, Read the Docs, Inc. & contributors'
-project = u'BitShares Documentation Portal'
+project = u'BitShares Documentation'
 copyright = u'2018, BitShares Blockchain Foundation'
 
 # The version info for the project you're documenting, acts as replacement for
