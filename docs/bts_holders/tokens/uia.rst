@@ -30,8 +30,12 @@ Use Cases
 * Crowd-Funding
 * Company Shares
 
-|
+-----
 
-|
+How to create a new UIA by using GUI
+--------------------------------------------
+
+* :ref:`How can I create a new UIA by using GUI? <creating-new-uia-gui>`
+
 
 |
