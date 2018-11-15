@@ -57,27 +57,26 @@ To see your Membership stats on BitShares UI wallet, go to your account and open
 Membership Groups
 ------------------
 
-+-------------------+-------------------------------------------------------------------------------------------------+
-|   group type      |  note                                                                                           |
-+===================+=================================================================================================+
-| Non-Members       |  (Basic member) A regular account is a non-member.                                              |
-+-------------------+-------------------------------------------------------------------------------------------------+
-| Lifetime Members  | Lifetime Members get a percentage cashback on every transaction fee they pay and qualify        |
-|                   | to earn referral income from users they register with or referred to the network.               |
-|                   | Lifetime membership is associated with a specific one-time fee that is defined by the           |
-|                   | committee. *Lifetime member (LTM) status* can register an account. If you want to do so,        |
-|                   | upgrade the account.                                                                            |
-+-------------------+-------------------------------------------------------------------------------------------------+  
-| Annual Members    | If a lifetime membership is too much you can still get the same cashback for the next           |
-|                   | year by becoming an annual subscriber for a smaller one-time fee which lasts for only one year. |         
-+-------------------+-------------------------------------------------------------------------------------------------+
+.. list-table::
+   :widths: 20 70
+   :header-rows: 1
 
-
+   * - group type 
+     - note
+   * - Non-Members  
+     - (Basic member) A regular account is a non-member.   
+   * - Lifetime Members 
+     - Lifetime Members get a percentage cashback on every transaction fee they pay and income from referrals. A Lifetime membership is associated with a certain one-time fee defined in this schedule. Lifetime member (LTM) status can register an account. If you want to do so, upgrade the account.
+   * - Annual Members
+     - This membership has been removed. (see the below) 
+	  
 .. Note:: Technically, the fees that you pay stay the same, but a part of the fees is refunded in the form of a vesting balance. Once the fees have vested you can withdraw them. 
 
 To see your vesting balances, open the side dropdown menu and select **Vesting balance**.  Vesting balances are recalculated hourly, so you might not yet see them right away.
 
-.. WARNING:: Due to some discrepancies, the annual membership has been disabled in most web wallets and will be re-enabled after a proper update eventually.
+.. WARNING:: In Q1/2016, the *annual membership* has been removed from the code base and no longer exists. References to this kind of memberships can be safely ignored.
+
+.. note:: Due to some discrepancies, the annual membership has been disabled in most web wallets and will be re-enabled after a proper update eventually.
 
 -------------
 

@@ -60,7 +60,7 @@ Witnesses
 
 In BitShares, the witnesses' job is to collect transactions, bundle them into a block, sign the block and broadcast it to the network. They essentially are the block producers for the underlying consensus mechanism.
 
-For each successfully constructed block, a witness is payed in shares that are taken from the limited reserves pool at a rate that is defined by the shareholders by means of approval voting.
+For each successfully constructed block, a witness is payed in shares that are taken from the limited reserves pool at a rate that is defined by the BTS Holders by means of approval voting.
 
 
 Workers / Budget Items
@@ -71,7 +71,7 @@ Thanks to the funds stored in the reserve pool, BitShares can offer to not only 
 Payouts
 --------------
 
-A blockchain parameter (defined by shareholders through the committee) defines the daily available budget. No more than that can be paid at any time to all workers combined.
+A blockchain parameter (defined by BTS Holders through the committee) defines the daily available budget. No more than that can be paid at any time to all workers combined.
 
 The daily budget is distributed as follows:
 
@@ -82,7 +82,7 @@ The daily budget is distributed as follows:
 
 Hence, in order to be successfully funded by the BitShares ecosystem, the BTS Holders approval for your budget item needs to be highly ranked.
 
-Since the payments for workers from the non-liquid reserve pool result in an increased supply of BTS, these payments are vesting over a period of time defined by shareholders.
+Since the payments for workers from the non-liquid reserve pool result in an increased supply of BTS, these payments are vesting over a period of time defined by BTS Holders.
 
 Working for BitShares
 ---------------------------------
@@ -95,7 +95,7 @@ In order to be get paid by BitShares, a proposal containing
 * the worker's name, and
 * an internet address.
 
-has to be publish on the blockchain and approved by shareholders.
+has to be publish on the blockchain and approved by BTS Holders.
 
 A worker can also choose on of the following properties:
 
@@ -111,7 +111,7 @@ Three types of pseudo workers exist that are not primarily used to for salary.
 Polling Workers
 ^^^^^^^^^^^^^^^^^^^^
 
-A worker proposal can be used to poll the shareholders for an opinion. Those workers usually have no or very small pay. Additionally, they come with a *proposal*, *recommendation* or other topic on which shareholders can publish a binary opinion (pro, or contra).
+A worker proposal can be used to poll the BTS Holders for an opinion. Those workers usually have no or very small pay. Additionally, they come with a *proposal*, *recommendation* or other topic on which BTS Holders can publish a binary opinion (pro, or contra).
 
 Refund Worker
 ^^^^^^^^^^^^^^^^

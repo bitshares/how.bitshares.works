@@ -18,6 +18,9 @@ From steemit
 Articles 
 ===============
 
+* `The total noobs guide to Bitshares <https://whaleshares.io/bitshares/@funkit/the-total-noobs-guide-to-bitshares>`_ : by @funkit
+
+
 
 * `Market Pegged Asset (MPA) backing collateral layers <https://bitsharestalk.io/btstalk-dev/@customminer/market-pegged-asset-mpa-backing-collateral-layers>`_ : by @customminer  
 
