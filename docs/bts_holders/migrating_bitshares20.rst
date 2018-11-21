@@ -1,4 +1,6 @@
 
+.. _migrating-1-to-2:
+
 ***********************************************
 Migrating from BitShares 1.0 to BitShares 2.0 
 ***********************************************
@@ -8,7 +10,8 @@ This migration tutorial is relevant only to those customers and investors that h
 .. contents:: Table of Contents
    :local:
 
-   
+------------
+
 What is new in BitShares 2.0
 =============================
 
@@ -42,8 +45,9 @@ What is new in BitShares 2.0
 .. _referral program: https://bitshares.org/referral-program/
 .. _recurring and scheduled payments: https://bitshares.org/technology/recurring-and-scheduled-payments/
 
+|
 
-
+---------------
 
 What has changed since BitShares 0.9
 =========================================
@@ -79,7 +83,9 @@ What has changed since BitShares 0.9
 .. _bitAssets 2.0: https://bitshares.org/technology/price-stable-cryptocurrencies/
 .. _a referral program: https://bitshares.org/technology/recurring-and-scheduled-payments/
 
+|
 
+-------------------
 
 Blockchain Upgrade
 ===================
@@ -131,6 +137,5 @@ BitShares 2.0 will be initialized with what is called a *Genesis Block*. That ge
 
 |
 
-|	
 	
 	
