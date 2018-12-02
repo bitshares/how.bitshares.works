@@ -33,7 +33,7 @@
     :numbered:
     :caption: User Guide
 
-    user_guide/accounts/bts_account
+    user_guide/accounts/index_account
     user_guide/create_account
     user_guide/bitshares-client
     user_guide/backup_local_wallet

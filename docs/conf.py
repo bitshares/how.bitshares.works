@@ -159,7 +159,7 @@ html_short_title = "BitShares Documentation"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-#html_static_path = ['_static']
+html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -208,7 +208,7 @@ html_show_copyright = True
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'SphinxRTDthemedemodoc'
+htmlhelp_basename = 'BitSharesdoc'
 
 # -- Options for LaTeX output --------------------------------------------------
 
@@ -225,9 +225,13 @@ latex_elements = {
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
+#latex_documents = [
+#  ('index', 'SphinxRTDthemedemo.tex', u'Sphinx RTD theme demo Documentation',
+#   u'Dave Snider, Read the Docs, Inc. & contributors', 'manual'),
+#]
 latex_documents = [
-  ('index', 'SphinxRTDthemedemo.tex', u'Sphinx RTD theme demo Documentation',
-   u'Dave Snider, Read the Docs, Inc. & contributors', 'manual'),
+  ('index', 'BBF.tex', u'BitShares Documentation',
+   u'BitShares-Core & contributors', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -255,9 +259,13 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
+#man_pages = [
+#    ('index', 'sphinxrtdthemedemo', u'Sphinx RTD theme demo Documentation',
+#     [u'Dave Snider, Read the Docs, Inc. & contributors'], 1)
+#]
 man_pages = [
-    ('index', 'sphinxrtdthemedemo', u'Sphinx RTD theme demo Documentation',
-     [u'Dave Snider, Read the Docs, Inc. & contributors'], 1)
+    ('index', 'BBF.tex', u'BitShares Documentation',
+     [u'BitShares-Core & contributors'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -269,10 +277,15 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
+#texinfo_documents = [
+#  ('index', 'SphinxRTDthemedemo', u'Sphinx RTD theme demo Documentation',
+#   u'Dave Snider, Read the Docs, Inc. & contributors', 'SphinxRTDthemedemo',
+#   'One line description of project.', 'Miscellaneous'),
+#]
 texinfo_documents = [
-  ('index', 'SphinxRTDthemedemo', u'Sphinx RTD theme demo Documentation',
-   u'Dave Snider, Read the Docs, Inc. & contributors', 'SphinxRTDthemedemo',
-   'One line description of project.', 'Miscellaneous'),
+  ('index', 'BitSharesPortal', u'BitShares Documentation',
+   u'BitShares-Core & contributors', 'BitSharesPortal',
+   'BBF project.', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.
