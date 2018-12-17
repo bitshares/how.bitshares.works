@@ -24,7 +24,7 @@ Download client files and install BitShares Wallet to your computer.
 
 **> Note: This download does not mean that you will have a Local wallet.**
 
-- `Download the Official Light Client <http://bitshares.org/download/>`_
+- `Download the Official Light Client <https://bitshares.org/download>`_
 - `BitShares-UI – Latest Release <https://github.com/bitshares/bitshares-ui/releases>`_
 
 **BitShares-UI**: 
