@@ -23,7 +23,7 @@ AngelShares have been gifted 50% of the initial BTS shares. The other 50% went t
 Claiming your Stake
 -----------------------
 
-In order to claim your BTS, you need to look in your bitcoin wallet and search for transactions the the above mentioned address. The keys that correspond to the inputs of that transaction are what you need to obtain your BTS (`FAQ <http://www1.agsexplorer.com/ags101>`).
+In order to claim your BTS, you need to look in your bitcoin wallet and search for transactions the the above mentioned address. The keys that correspond to the inputs of that transaction are what you need to obtain your BTS (`FAQ <http://www1.agsexplorer.com/ags101>`_ ).
 
 If you have located the private keys (in wallet import format - WIF), you can safely import them into your BitShares account using the *Import Keys* tools in the Wallet Management Console of your BitShares wallet.
 

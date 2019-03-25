@@ -13,7 +13,7 @@
 
 import sys
 import os
-
+import re
 
 #sys.path.append(os.path.abspath('./demo/'))
 sys.path.append(os.path.abspath('./docs/'))
@@ -59,7 +59,7 @@ master_doc = 'index'
 #project = u'Read the Docs Sphinx Theme'
 #copyright = u'Dave Snider, Read the Docs, Inc. & contributors'
 project = u'BitShares Documentation'
-copyright = u'2018, BitShares Blockchain Foundation'
+copyright = u'2019, BitShares Blockchain Foundation'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -82,7 +82,7 @@ language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns = ['_build']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -104,8 +104,11 @@ pygments_style = 'default'
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
 
-intersphinx_mapping = {'rtd': ('https://docs.readthedocs.io/en/latest/', None)}
-
+intersphinx_mapping = {
+    'rtd': ('https://docs.readthedocs.io/en/latest/', None),
+    'sphinx': ('http://www.sphinx-doc.org/en/stable/', None),
+    'python': ('https://docs.python.org/', None),	
+}
 
 # -- Options for HTML output ---------------------------------------------------
 
