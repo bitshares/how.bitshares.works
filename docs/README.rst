@@ -23,5 +23,13 @@ The purpose of this site is to provide in-depth documentation about the BitShare
 - `BitShares Blockchain Foundation Announcements <http://www.bitshares.foundation/>`_
 
 
+* **Development**
+
+  - `BitShares Developers Documentation Portal <http://dev.bitshares.works/en/master/>`_
+  - `BitShares-Core Release <https://github.com/bitshares/bitshares-core/releases>`_
+  - `BitShares-UI Release <https://github.com/bitshares/bitshares-ui/releases>`_
+
+
+
 ----------
 
