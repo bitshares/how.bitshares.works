@@ -29,6 +29,10 @@ The purpose of this site is to provide in-depth documentation about the BitShare
   - `BitShares-Core Release <https://github.com/bitshares/bitshares-core/releases>`_
   - `BitShares-UI Release <https://github.com/bitshares/bitshares-ui/releases>`_
 
+* **New: SimpleGUIWallet**
+
+  - :ref:`Securing BitShares with Ledger Nano <ledger-nano>`
+
 
 
 ----------

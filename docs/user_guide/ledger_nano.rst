@@ -1,4 +1,7 @@
 
+.. _ledger-nano:
+
+***********************************
 Securing BitShares with Ledger Nano
 ***********************************
 
