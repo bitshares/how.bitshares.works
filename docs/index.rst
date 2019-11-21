@@ -40,6 +40,7 @@
     user_guide/fund_account
     user_guide/bridge_gateway 
     user_guide/dex_exchange_ui
+    user_guide/ledger_nano	
 
 -------
 	
