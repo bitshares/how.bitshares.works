@@ -10,6 +10,9 @@ The History of BitShares as laid out by Stan Larimer
 
 "Here are the first parts of a planned series of blog articles that will appear on the bitshares.org website as soon as I am sufficiently pleased with them. This series is intended to be a resource for newbies and a summary of all that has been accomplished in the past year. Think of this as the Official Year One Newsletter."
 
+* `Part One Source <https://bitsharestalk.org/index.php?topic=4833.msg63464#msg63464>`_
+* `Part Two Source <https://bitsharestalk.org/index.php?topic=4833.msg63678#msg63678>`_
+* `Part Three Source <https://bitsharestalk.org/index.php?topic=4833.msg64045#msg64045>`_
    
 Part One
 =======================================
