@@ -12,7 +12,7 @@ Communities
 * `Forum - BitSharesTalk`_ 
 * `Telagram - BitSharesDAC`_
 * `Telagram - BitShares Traders`_
-* `Discord - BitShares`_
+* `Discord - BitShares (to be updated)`_
 * `BitShares on Steemit`_
 * `Twitter`_
 * `Reddit`_	
@@ -22,20 +22,10 @@ Communities
 .. _Forum - BitSharesTalk: https://bitsharestalk.org/
 .. _Telagram - BitSharesDAC: https://t.me/BitSharesDAC
 .. _Telagram - BitShares Traders: https://t.me/BitShares_Traders
-.. _Discord - BitShares: https://discord.gg/GsjQfAJ
 .. _BitShares on Steemit: https://steemit.com/trending/bitshares
 .. _Twitter: https://twitter.com/bitshares
 .. _Reddit: https://www.reddit.com/r/BitShares/
 .. _BitSharesTalk.io: https://bitsharestalk.io/forums
-
-
-Beyond Bitcoin - Bitshares
-----------------------------
-
-
-- `BitShares Discord Hangouts <https://discord.gg/RPJEsGp>`_
-   - `BitShares Hangout: Discord Tips <https://steemit.com/bitshares/@ash/bitshares-hangout-discord-tips>`_
-
 
 |
 
