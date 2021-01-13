@@ -23,7 +23,7 @@ Communities
 .. _Telagram - BitSharesDAC: https://t.me/BitSharesDAC
 .. _Telagram - BitShares Traders: https://t.me/BitShares_Traders
 .. _Discord - BitShares: https://discord.gg/GsjQfAJ
-.. _BitSares on Steemit: https://steemit.com/trending/bitshares
+.. _BitShares on Steemit: https://steemit.com/trending/bitshares
 .. _Twitter: https://twitter.com/bitshares
 .. _Reddit: https://www.reddit.com/r/BitShares/
 .. _BitSharesTalk.io: https://bitsharestalk.io/forums
