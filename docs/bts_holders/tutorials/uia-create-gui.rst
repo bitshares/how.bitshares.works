@@ -51,7 +51,7 @@ This also requires that the fee pool is funded (e.g. by the issuer). Since all p
 :Quote Asset Amount:   Core exchange rate  
 :Base Asset Amount:   Core exchange rate
 	
-.. note:: Symbols with less than 5 characters are very expense. Please consult the Networks fees in the explorer!
+.. note:: Symbols with less than 5 characters are very expensive. Please consult the Networks fees in the explorer!
 
 	
 
