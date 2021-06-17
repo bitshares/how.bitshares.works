@@ -48,7 +48,7 @@ You can use the memo section to send a message. Also, some transactions require 
 Paying Fees
 ^^^^^^^^^^^^^^^^
 
-Each time you perform an activity (i.e., send fund, place an order, etc), you pay a smell amount of fee. Any transaction fee can be paid by paying any asset that has a Core exchange rate (i.e., price) at which the asset can be exchange implicitly into BTS to cover the network fee. When you confirm your activity (transaction), you can see a fee amount for the transaction.
+Each time you perform an activity (i.e., send fund, place an order, etc), you pay a small amount of fee. Any transaction fee can be paid by paying any asset that has a Core exchange rate (i.e., price) at which the asset can be exchange implicitly into BTS to cover the network fee. When you confirm your activity (transaction), you can see a fee amount for the transaction.
    
 
 
