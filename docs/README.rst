@@ -19,7 +19,7 @@ The purpose of this site is to provide in-depth documentation about the BitShare
 
 
 
-- `BitShares Whitepaper <https://whitepaper.io/document/388/bitshares-whitepaper>`_
+- `BitShares Whitepaper <https://whitepaper.io/coin/bitshares>`_
 
 
 * **Development**
